@@ -29,7 +29,7 @@ export const navData: NavData = {
         title: "FIND QUALIFIED LEADS",
         subtext: "Get a list of high-potential leads with verified emails, phone numbers, and relevant details.",
         features: [
-          { title: "450M+ lead database", href: "/product/lead-database" },
+          { title: "lead database", href: "/product/lead-database" },
           { title: "Email finder & verifier", href: "/product/email-finder" },
           { title: "Phone number finder", href: "/product/phone-finder" }
         ]

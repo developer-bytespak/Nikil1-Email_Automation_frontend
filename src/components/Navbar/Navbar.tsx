@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-sm relative z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -24,7 +24,7 @@ export default function Navbar() {
           </div>
 
           {/* Center Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 relative">
             <div
               className="relative"
               onMouseEnter={() => setHoverState('product')}
