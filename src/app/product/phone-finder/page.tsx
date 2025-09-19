@@ -126,7 +126,12 @@ export default function PhoneFinderPage() {
       {/* Waterfall Enrichment Infographic */}
       <section className="py-20 lg:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+          <div 
+            className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
+                       transform hover:scale-105 hover:shadow-2xl 
+                       transition-all duration-500 animate-fade-in-up"
+            style={{ animationDelay: '0.2s' }}
+          >
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 More phone numbers. <span className="text-blue-600">Same great quality.</span>
@@ -240,7 +245,12 @@ export default function PhoneFinderPage() {
       {/* LinkedIn Extension Card */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+          <div 
+            className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
+                       transform hover:scale-105 hover:shadow-2xl 
+                       transition-all duration-500 animate-fade-in-up"
+            style={{ animationDelay: '0.4s' }}
+          >
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Grab phone numbers directly from LinkedIn
@@ -437,28 +447,58 @@ export default function PhoneFinderPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-r from-blue-600 to-blue-800">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to find verified phone numbers?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Join thousands of sales teams already using our phone finder to reach leads directly.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/signup">
-              <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                Start Free Trial
-              </button>
-            </Link>
-            <Link href="/pricing">
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
-                View Pricing
-              </button>
-            </Link>
+      
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div className="col-span-1 md:col-span-2">
+              <h3 className="text-2xl font-bold mb-4">MarketingPro</h3>
+              <p className="text-gray-400 mb-6 max-w-md">
+                The all-in-one prospecting platform that helps sales teams find, engage, and convert more qualified leads.
+              </p>
+              
+            </div>
+
+            {/* Product Links */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Product</h4>
+              <ul className="space-y-2">
+                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
+                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
+                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
+                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
+                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+              </ul>
+            </div>
+
+            {/* Company Links */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
+              <ul className="space-y-2">
+                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-12 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 text-sm">
+                © 2025 MarketingPro. All rights reserved.
+              </p>
+              <div className="flex space-x-6 mt-4 md:mt-0">
+                <a  className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Privacy Policy</a>
+                <a  className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Terms of Service</a>
+                <a  className="text-gray-400 hover:text-white text-sm transition-colors duration-200"  >Cookie Policy</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      </section>
+      </footer>
     </div>
   );
 }

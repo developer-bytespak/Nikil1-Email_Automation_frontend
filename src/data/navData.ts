@@ -59,7 +59,6 @@ export const navData: NavData = {
     title: "MarketingPro",
     features: [
       { title: "For Sales Development", href: "/roles/sales-development" },
-      { title: "For RevOps", href: "/roles/revops" },
       { title: "For Founder", href: "/roles/founder" }
     ]
   },
