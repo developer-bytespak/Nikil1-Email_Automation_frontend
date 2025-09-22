@@ -75,7 +75,7 @@ export default function AIPersonalizationPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                       </svg>
                     </div>
-                    <span className="font-semibold">Ask lemlist AI to generate new data</span>
+                    <span className="font-semibold">Ask  AI to generate new data</span>
                   </div>
                 </div>
 
@@ -189,7 +189,7 @@ export default function AIPersonalizationPage() {
                       <p>Hi Esteban,</p>
                       <p>Saw that you focus on <span className="bg-yellow-100">helping businesses get closer to their customers</span> (digitally)—like how you’re doing it!</p>
                       <p>Would you be open to seeing the email campaigns they use to book 25+ meetings per month?</p>
-                      <p>Best,<br/>Tal from lemlist</p>
+                      <p>Best,<br/>Tal from marktingPro</p>
                     </div>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ export default function AIPersonalizationPage() {
                         <li>Talking about themselves.</li>
                       </ul>
                       <p>Would you like to get campaigns they use to book 25–40 meetings monthly?</p>
-                      <p>Best,<br/>Tal from lemlist</p>
+                      <p>Best,<br/>Tal from marketingPro</p>
                     </div>
                   </div>
                 </div>

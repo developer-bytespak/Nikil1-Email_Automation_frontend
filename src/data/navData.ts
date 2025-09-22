@@ -68,9 +68,9 @@ export const navData: NavData = {
         title: "YOUTUBE BEST",
         subtext: "Learn from the best outreach strategies and techniques.",
         features: [
-          { title: "AI personalization", href: "/toolbox/ai-personalization" },
-          { title: "Handle any cold calls", href: "/toolbox/handle-cold-calls" },
-          { title: "11 steps to stop landing", href: "/toolbox/11-steps-stop-landing" }
+          { title: "AI personalization", href: "#" },
+          { title: "Handle any cold calls", href: "#" },
+          { title: "11 steps to stop landing", href: "#" }
         ]
       },
       {

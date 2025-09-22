@@ -32,7 +32,7 @@ export default function UnifiedInboxPage() {
       {/* Problem Statement Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-[28px] shadow-2xl p-6 sm:p-10 md:p-14">
+          <div className="bg-white rounded-[28px] shadow-2xl p-6 sm:p-10 md:p-14 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
             <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 leading-snug mb-10">
               <span>Without a </span>
               <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded-lg">clear overview</span>
@@ -41,7 +41,7 @@ export default function UnifiedInboxPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {/* Card 1 */}
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center">
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center">
                   <svg className="w-7 h-7 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -52,7 +52,7 @@ export default function UnifiedInboxPage() {
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center">
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-pink-50 flex items-center justify-center">
                   <svg className="w-7 h-7 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -62,7 +62,7 @@ export default function UnifiedInboxPage() {
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center">
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center">
                   <svg className="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -90,7 +90,7 @@ export default function UnifiedInboxPage() {
           </div>
 
           {/* Main Content Card */}
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Text Content */}
               <div className="space-y-6">
@@ -116,7 +116,7 @@ export default function UnifiedInboxPage() {
               <div className="bg-gray-50 rounded-2xl p-6 shadow-inner">
                 <div className="grid grid-cols-2 gap-4 h-96">
                   {/* Left Panel - Conversation List */}
-                  <div className="bg-white rounded-xl p-4 shadow-sm">
+                  <div className="bg-white rounded-xl p-4 shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                     <div className="flex items-center justify-between mb-4">
                       <h4 className="font-semibold text-gray-800">My conversations</h4>
                       <div className="flex items-center space-x-2">
@@ -209,7 +209,7 @@ export default function UnifiedInboxPage() {
                   </div>
 
                   {/* Right Panel - Chat View */}
-                  <div className="bg-white rounded-xl p-4 shadow-sm">
+                  <div className="bg-white rounded-xl p-4 shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                     <div className="h-full flex flex-col">
                       {/* Chat Header */}
                       <div className="flex items-center space-x-3 pb-3 border-b border-gray-100">
@@ -253,7 +253,7 @@ export default function UnifiedInboxPage() {
                             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                             </svg>
-                            <span>Marked as Interested by lemlist's AI</span>
+                            <span>Marked as Interested by  AI</span>
                           </div>
                         </div>
 
@@ -312,7 +312,7 @@ export default function UnifiedInboxPage() {
       {/* Take Action Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Text Content */}
               <div className="space-y-6">
@@ -371,13 +371,13 @@ export default function UnifiedInboxPage() {
                     <svg className="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-sm text-red-800">Marked as Interested by lemlist's AI</span>
+                    <span className="text-sm text-red-800">Marked as Interested by  AI</span>
                   </div>
                 </div>
 
                 {/* Channels Dropdown */}
                 <div className="relative mb-4">
-                  <div className="bg-white border-2 border-gray-200 rounded-lg shadow-lg">
+                  <div className="bg-white border-2 border-gray-200 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                     <div className="px-4 py-3 border-b border-gray-100">
                       <span className="text-sm font-semibold text-gray-700">CHANNELS</span>
                     </div>
@@ -450,7 +450,7 @@ export default function UnifiedInboxPage() {
       {/* Manage Replies Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Text */}
               <div className="space-y-6">
@@ -480,7 +480,7 @@ export default function UnifiedInboxPage() {
                     <div>
                       <label className="text-xs text-gray-500">From:</label>
                       <div className="mt-1 relative">
-                        <div className="flex items-center justify-between bg-white border rounded-lg px-3 py-2 text-sm text-gray-700 shadow-sm">
+                        <div className="flex items-center justify-between bg-white border rounded-lg px-3 py-2 text-sm text-gray-700 shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                           <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 rounded-full bg-gray-200"></div>
                             <span>Matthieu Jungfer (matthieu@lempire.co)</span>
@@ -488,12 +488,12 @@ export default function UnifiedInboxPage() {
                           <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
                         </div>
                         {/* Dropdown */}
-                        <div className="absolute left-0 right-0 mt-2 bg-white rounded-lg border shadow-xl overflow-hidden">
+                        <div className="absolute left-0 right-0 mt-2 bg-white rounded-lg border shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105">
                           <div className="px-4 py-2 text-xs text-gray-500 bg-gray-50">MATTHIEU JUNGFER</div>
-                          <div className="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm">Matthieu Jungfer (matthieu@lemlist.io)</div>
-                          <div className="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm">Matthieu Jungfer (matthieu@getlemlist.com)</div>
+                          <div className="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm">Matthieu Jungfer (matthieu@marketingPro.io)</div>
+                          <div className="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm">Matthieu Jungfer (matthieu@getmarketingPro.com)</div>
                           <div className="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm flex items-center justify-between">
-                            <span>Matthieu Jungfer (matthieu@lemlist.co)</span>
+                            <span>Matthieu Jungfer (matthieu@marketingPro.co)</span>
                             <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center"><svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 3a1 1 0 01.894.553l6 12A1 1 0 0116 17H4a1 1 0 01-.894-1.447l6-12A1 1 0 0110 3z"/></svg></div>
                           </div>
                         </div>
@@ -521,8 +521,8 @@ export default function UnifiedInboxPage() {
 
                   {/* Footer Actions */}
                   <div className="mt-4 flex items-center space-x-2">
-                    <button className="text-xs bg-white border rounded-lg px-3 py-1 shadow-sm">Add {`{custom variable}`}</button>
-                    <button className="text-xs bg-white border rounded-lg px-3 py-1 shadow-sm">Ask AI</button>
+                    <button className="text-xs bg-white border rounded-lg px-3 py-1 shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-md">Add {`{custom variable}`}</button>
+                    <button className="text-xs bg-white border rounded-lg px-3 py-1 shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-md">Ask AI</button>
                     <div className="flex-1"></div>
                     <div className="w-20 h-2 bg-gray-200 rounded"></div>
                     <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
@@ -537,7 +537,7 @@ export default function UnifiedInboxPage() {
       {/* Comparison Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Text Content */}
               <div className="space-y-6">
@@ -569,7 +569,7 @@ export default function UnifiedInboxPage() {
                   </div>
                   
                   <div className="space-y-3">
-                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200">
+                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                       <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                         <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -579,7 +579,7 @@ export default function UnifiedInboxPage() {
                       <span className="text-sm font-medium text-gray-700">TOOL 1</span>
                     </div>
                     
-                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200">
+                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                       <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                         <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -589,7 +589,7 @@ export default function UnifiedInboxPage() {
                       <span className="text-sm font-medium text-gray-700">TOOL 2</span>
                     </div>
                     
-                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200">
+                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                       <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                         <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -599,7 +599,7 @@ export default function UnifiedInboxPage() {
                       <span className="text-sm font-medium text-gray-700">TOOL 3</span>
                     </div>
                     
-                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200">
+                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                       <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                         <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -609,7 +609,7 @@ export default function UnifiedInboxPage() {
                       <span className="text-sm font-medium text-gray-700">TOOL 4</span>
                     </div>
                     
-                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200">
+                    <div className="flex items-center space-x-3 bg-white rounded-lg p-3 shadow-sm border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                       <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                         <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -636,15 +636,15 @@ export default function UnifiedInboxPage() {
                     <div className="text-center text-sm font-semibold text-gray-700 mb-4">1 TOOL</div>
                     
                     <div className="space-y-3">
-                      <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center">
+                      <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                         <span className="text-sm font-medium text-gray-700">Find verified contacts</span>
                       </div>
                       
-                      <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center">
+                      <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                         <span className="text-sm font-medium text-gray-700">Outreach at scale</span>
                       </div>
                       
-                      <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center">
+                      <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-md">
                         <span className="text-sm font-medium text-gray-700">Manage multichannel conversations</span>
                       </div>
                     </div>
