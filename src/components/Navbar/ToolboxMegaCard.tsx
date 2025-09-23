@@ -5,7 +5,7 @@ import { navData } from '../../data/navData';
 
 export default function ToolboxMegaCard() {
   return (
-    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-8 w-[900px] max-w-[90vw] animate-in fade-in-0 slide-in-from-top-2 duration-300">
+    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-8 w-[900px] max-w-[90vw]">
       <div className="flex gap-8">
         {/* Main Content - 2 Columns */}
         <div className="flex-1 grid grid-cols-2 gap-8">

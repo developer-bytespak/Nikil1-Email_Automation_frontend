@@ -533,8 +533,8 @@ export default function WarmupDeliverabilityPage() {
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
                 <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
+                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
               </ul>
             </div>
           </div>

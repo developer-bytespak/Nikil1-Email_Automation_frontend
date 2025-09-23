@@ -5,7 +5,7 @@ import { navData } from '../../data/navData';
 
 export default function RolesMiniCard() {
   return (
-    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-6 w-[500px] max-w-[90vw] animate-in fade-in-0 slide-in-from-top-2 duration-300">
+    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-6 w-[500px] max-w-[90vw]">
       <div className="flex gap-6">
         {/* Main Content */}
         <div className="flex-1">

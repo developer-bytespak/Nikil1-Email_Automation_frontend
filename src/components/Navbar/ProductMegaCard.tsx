@@ -5,7 +5,7 @@ import { navData } from '../../data/navData';
 
 export default function ProductMegaCard() {
   return (
-    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-8 w-[900px] max-w-[90vw] animate-in fade-in-0 slide-in-from-top-2 duration-300">
+    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-8 w-[1000px] max-w-[90vw]">
       <div className="flex gap-8">
         {/* Main Content - 3 Columns */}
         <div className="flex-1 grid grid-cols-3 gap-8">
@@ -65,7 +65,7 @@ export default function ProductMegaCard() {
 
 // Helper function to get feature icons
 function getFeatureIcon(featureTitle: string) {
-  const iconMap: { [key: string]: JSX.Element } = {
+  const iconMap: { [key: string]: React.ReactNode } = {
     '450M+ lead database': (
       <svg className="w-3 h-3 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
         <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
