@@ -80,7 +80,7 @@ export default function Home() {
                 {/* Workflow Diagram Image */}
                 <div className="relative rounded-2xl overflow-hidden">
                   <img 
-                    src="/images/Home1.png.png" 
+                    src="/images/home1.png.png" 
                     alt="Marketing Workflow Diagram" 
                     className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
                   />
