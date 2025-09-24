@@ -30,7 +30,7 @@ export default function RolePage({ params }: RolePageProps) {
               Role-Specific Features Coming Soon
             </h2>
             <p className="text-blue-700">
-              We're developing specialized features and workflows for {roleTitle.toLowerCase()} professionals. 
+              We&apos;re developing specialized features and workflows for {roleTitle.toLowerCase()} professionals. 
               Stay tuned for tailored solutions that fit your specific needs.
             </p>
           </div>

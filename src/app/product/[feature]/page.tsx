@@ -30,7 +30,7 @@ export default function ProductFeaturePage({ params }: ProductFeaturePageProps) 
               Feature Details Coming Soon
             </h2>
             <p className="text-blue-700">
-              We're working hard to bring you detailed information about this feature. 
+              We&apos;re working hard to bring you detailed information about this feature. 
               Check back soon for comprehensive documentation and examples.
             </p>
           </div>

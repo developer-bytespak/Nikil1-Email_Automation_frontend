@@ -30,7 +30,7 @@ export default function ToolPage({ params }: ToolPageProps) {
               Tool Documentation Coming Soon
             </h2>
             <p className="text-blue-700">
-              We're preparing comprehensive documentation and tutorials for the {toolTitle.toLowerCase()} tool. 
+              We&apos;re preparing comprehensive documentation and tutorials for the {toolTitle.toLowerCase()} tool. 
               Check back soon for detailed guides and best practices.
             </p>
           </div>
