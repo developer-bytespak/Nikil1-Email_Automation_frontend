@@ -191,7 +191,7 @@ export default function SignupPage() {
                     className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                   />
                   <label htmlFor="recaptcha" className="ml-2 text-sm text-gray-700">
-                    I'm not a robot
+                    I&apos;m not a robot
                   </label>
                 </div>
                 <div className="flex items-center">

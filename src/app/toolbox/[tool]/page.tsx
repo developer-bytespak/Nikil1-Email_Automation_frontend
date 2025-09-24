@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+
 
 interface ToolPageProps {
   params: {

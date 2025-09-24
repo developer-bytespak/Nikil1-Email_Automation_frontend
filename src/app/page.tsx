@@ -9,29 +9,29 @@ export default function Home() {
       <section className="pt-20 lg:pt-24 pb-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Hero Content Card */}
-          <ScrollAnimation animation="scaleIn" delay={200}>
+          <ScrollAnimation animation="scaleIn" delay={100}>
             <div className="bg-gray-200 border border-gray-200 rounded-3xl p-8 md:p-12 text-center shadow-xl mb-8">
-              <ScrollAnimation animation="fadeInUp" delay={400}>
+              <ScrollAnimation animation="fadeInUp" delay={200}>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                   The <span className="text-blue-600">prospecting tool</span><br /> to automate <span className="text-blue-600">multichannel</span> <br /> outreach that <span className="text-blue-600">get replies</span>
                 </h1>
               </ScrollAnimation>
-              <ScrollAnimation animation="fadeInUp" delay={600}>
+              <ScrollAnimation animation="fadeInUp" delay={300}>
                 <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
                   Find leads with verified contact details and connect through email, LinkedIn, WhatsApp, or calls—personalized and always inbox-ready.
                 </p>
               </ScrollAnimation>
-              <ScrollAnimation animation="bounceIn" delay={800}>
+              <ScrollAnimation animation="bounceIn" delay={400}>
                 <Link href="/signup">
-                  <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 mb-8 hover:scale-105 transform transition-all duration-200">
+                  <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 mb-8 hover:scale-105 transform transition-all duration-150">
                     Start a 14-day free trial →
                   </button>
                 </Link>
               </ScrollAnimation>
               {/* Ratings Section */}
-              <ScrollAnimation animation="fadeInUp" delay={1000}>
+              <ScrollAnimation animation="fadeInUp" delay={500}>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={1200}>
+                  <ScrollAnimation animation="fadeInLeft" delay={600}>
                     <div className="flex items-center gap-2">
                       <div className="w-5 h-5 bg-blue-500 rounded flex items-center justify-center animate-glow">
                         <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -48,7 +48,7 @@ export default function Home() {
                       </div>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={1400}>
+                  <ScrollAnimation animation="fadeInRight" delay={700}>
                     <div className="flex items-center gap-2">
                       <div className="w-5 h-5 bg-red-500 rounded flex items-center justify-center animate-glow">
                         <span className="text-white text-xs font-bold">G</span>
@@ -69,20 +69,20 @@ export default function Home() {
           </ScrollAnimation>
 
           {/* Workflow Diagram Card - Overlapping */}
-          <ScrollAnimation animation="slideInUp" delay={1600}>
+          <ScrollAnimation animation="slideInUp" delay={800}>
             <div className="relative -mt-14">
               {/* Dotted Background Pattern */}
               <div className="absolute inset-0 opacity-20 animate-pulse-slow" style={{
                 backgroundImage: `radial-gradient(circle, #9ca3af 1px, transparent 1px)`,
                 backgroundSize: '20px 20px'
               }}></div>
-              <div className="relative bg-gray-200 border border-gray-200 rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="relative bg-gray-200 border border-gray-200 rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
                 {/* Workflow Diagram Image */}
                 <div className="relative rounded-2xl overflow-hidden">
                   <img 
                     src="/images/Home1.png.png" 
                     alt="Marketing Workflow Diagram" 
-                    className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500"
+                    className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
       </section>
       <section className="py-20 lg:py-32 bg-gradient-to-r from-blue-600 to-blue-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollAnimation animation="fadeInDown" delay={200}>
+          <ScrollAnimation animation="fadeInDown" delay={100}>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center 
                    leading-tight tracking-tight drop-shadow-lg">
@@ -103,12 +103,12 @@ export default function Home() {
 
           <div className="space-y-8">
             {/* Card 1 */}
-            <ScrollAnimation animation="fadeInUp" delay={400}>
-              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={600}>
+                  <ScrollAnimation animation="fadeInLeft" delay={300}>
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-200">
                         Find ready-to-buy prospects with verified contact details
                       </h3>
                       <p className="text-lg text-gray-600 leading-relaxed">
@@ -116,16 +116,16 @@ export default function Home() {
                       </p>
                       <br />
                       <p className="text-lg text-gray-600 leading-relaxed">
-                        With one click, built-in waterfall enrichment pulls their verified emails and phone numbers from the market's top providers.
+                        With one click, built-in waterfall enrichment pulls their verified emails and phone numbers from the market&apos;s top providers.
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={800}>
+                  <ScrollAnimation animation="fadeInRight" delay={400}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H2.png.png" 
                         alt="LinkedIn Integration" 
-                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-300 hover:shadow-2xl"
                       />
                     </div>
                   </ScrollAnimation>
@@ -134,25 +134,25 @@ export default function Home() {
             </ScrollAnimation>
 
             {/* Card 2 */}
-            <ScrollAnimation animation="fadeInUp" delay={1000}>
-              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
+            <ScrollAnimation animation="fadeInUp" delay={500}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={1200}>
+                  <ScrollAnimation animation="fadeInLeft" delay={600}>
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-200">
                         Personalize at scale with AI—without losing the human touch.
                       </h3>
                       <p className="text-lg text-gray-600 leading-relaxed">
-                        AI gathers details from LinkedIn, websites, and more, so you don't have to. Dynamic variables adapt your text, images, and landing pages to each lead automatically.
+                        AI gathers details from LinkedIn, websites, and more, so you don&apos;t have to. Dynamic variables adapt your text, images, and landing pages to each lead automatically.
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={1400}>
+                  <ScrollAnimation animation="fadeInRight" delay={700}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H3.png.png" 
                         alt="LinkedIn Integration" 
-                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-300 hover:shadow-2xl"
                       />
                     </div>
                   </ScrollAnimation>
@@ -161,12 +161,12 @@ export default function Home() {
             </ScrollAnimation>
 
             {/* Card 3 */}
-            <ScrollAnimation animation="fadeInUp" delay={1600}>
-              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
+            <ScrollAnimation animation="fadeInUp" delay={800}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={1800}>
+                  <ScrollAnimation animation="fadeInLeft" delay={900}>
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-200">
                         Run sequences across multiple channels, all from one place.
                       </h3>
                       <p className="text-lg text-gray-600 leading-relaxed">
@@ -174,12 +174,12 @@ export default function Home() {
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={2000}>
+                  <ScrollAnimation animation="fadeInRight" delay={1000}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H4.png.png" 
                         alt="LinkedIn Integration" 
-                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-300 hover:shadow-2xl"
                       />
                     </div>
                   </ScrollAnimation>
@@ -188,12 +188,12 @@ export default function Home() {
             </ScrollAnimation>
 
             {/* Card 4 */}
-            <ScrollAnimation animation="fadeInUp" delay={2200}>
-              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
+            <ScrollAnimation animation="fadeInUp" delay={1100}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={2400}>
+                  <ScrollAnimation animation="fadeInLeft" delay={1200}>
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-200">
                         Stay out of the spam folder for good.
                       </h3>
                       <p className="text-lg text-gray-600 leading-relaxed">
@@ -201,12 +201,12 @@ export default function Home() {
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={2600}>
+                  <ScrollAnimation animation="fadeInRight" delay={1300}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H5.png.png" 
                         alt="LinkedIn Integration" 
-                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-300 hover:shadow-2xl"
                       />
                     </div>
                   </ScrollAnimation>
@@ -220,7 +220,7 @@ export default function Home() {
       {/* Integration Section */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollAnimation animation="fadeInDown" delay={200}>
+          <ScrollAnimation animation="fadeInDown" delay={100}>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 mb-6">
                 Fits your workflow, not the other way around
@@ -230,11 +230,11 @@ export default function Home() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Panel - Integration */}
-            <ScrollAnimation animation="fadeInLeft" delay={400}>
-              <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-12 text-center shadow-xl hover:shadow-2xl transition-all duration-500">
+            <ScrollAnimation animation="fadeInLeft" delay={200}>
+              <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-12 text-center shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="relative mb-8">
                   {/* Central Platform Icon */}
-                  <ScrollAnimation animation="bounceIn" delay={600}>
+                  <ScrollAnimation animation="bounceIn" delay={300}>
                     <div className="w-20 h-20 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-8 shadow-lg animate-glow">
                       <span className="text-white text-2xl font-bold">M</span>
                     </div>
@@ -244,7 +244,7 @@ export default function Home() {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative w-80 h-80">
                       {/* Top Row */}
-                      <ScrollAnimation animation="fadeInDown" delay={800}>
+                      <ScrollAnimation animation="fadeInDown" delay={400}>
                         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4">
                           <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center animate-float">
                             <span className="text-white text-sm font-bold">M</span>
@@ -253,7 +253,7 @@ export default function Home() {
                       </ScrollAnimation>
                       
                       {/* Left Column */}
-                      <ScrollAnimation animation="fadeInLeft" delay={1000}>
+                      <ScrollAnimation animation="fadeInLeft" delay={500}>
                         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4">
                           <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4 animate-float" style={{animationDelay: '0.5s'}}>
                             <span className="text-white text-sm font-bold">P</span>
@@ -268,7 +268,7 @@ export default function Home() {
                       </ScrollAnimation>
                       
                       {/* Right Column */}
-                      <ScrollAnimation animation="fadeInRight" delay={1200}>
+                      <ScrollAnimation animation="fadeInRight" delay={600}>
                         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4">
                           <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4 animate-float" style={{animationDelay: '0.7s'}}>
                             <span className="text-white text-sm font-bold">S</span>
@@ -283,7 +283,7 @@ export default function Home() {
                       </ScrollAnimation>
                       
                       {/* Bottom Row */}
-                      <ScrollAnimation animation="fadeInUp" delay={1400}>
+                      <ScrollAnimation animation="fadeInUp" delay={700}>
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-4">
                           <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center animate-float" style={{animationDelay: '2s'}}>
                             <span className="text-white text-sm font-bold">S</span>
@@ -302,7 +302,7 @@ export default function Home() {
                 </div>
               </div>
               
-                <ScrollAnimation animation="fadeInUp" delay={1600}>
+                <ScrollAnimation animation="fadeInUp" delay={800}>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Plug into any tool you use...
                   </h3>
@@ -314,11 +314,11 @@ export default function Home() {
             </ScrollAnimation>
             
             {/* Right Panel - CRM Interface */}
-            <ScrollAnimation animation="fadeInRight" delay={600}>
-              <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500">
+            <ScrollAnimation animation="fadeInRight" delay={300}>
+              <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="space-y-6">
                   {/* CRM Header */}
-                  <ScrollAnimation animation="fadeInDown" delay={800}>
+                  <ScrollAnimation animation="fadeInDown" delay={400}>
                     <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center animate-glow">
@@ -335,8 +335,8 @@ export default function Home() {
                   </ScrollAnimation>
 
                   {/* Contact Profile */}
-                  <ScrollAnimation animation="fadeInLeft" delay={1000}>
-                    <div className="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-all duration-300">
+                  <ScrollAnimation animation="fadeInLeft" delay={500}>
+                    <div className="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-all duration-200">
                       <div className="flex items-center gap-3 mb-3">
                         <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center animate-glow">
                           <span className="text-white font-semibold">SW</span>
@@ -355,8 +355,8 @@ export default function Home() {
                   </ScrollAnimation>
 
                   {/* Task Window */}
-                  <ScrollAnimation animation="fadeInRight" delay={1200}>
-                    <div className="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-all duration-300">
+                  <ScrollAnimation animation="fadeInRight" delay={600}>
+                    <div className="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-all duration-200">
                       <div className="flex items-center justify-between mb-3">
                         <h5 className="font-semibold text-gray-800">LinkedIn message task</h5>
                         <span className="px-2 py-1 bg-red-100 text-red-600 text-xs rounded animate-pulse-slow">High</span>
@@ -379,7 +379,7 @@ export default function Home() {
                   </ScrollAnimation>
                 </div>
                 
-                <ScrollAnimation animation="fadeInUp" delay={1400}>
+                <ScrollAnimation animation="fadeInUp" delay={700}>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-6">
                     and run it straight from your CRM.
                   </h3>
@@ -412,11 +412,11 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
-                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
-                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
-                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
-                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
-                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+                <li><Link href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-150">Lead Database</Link></li>
+                <li><Link href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-150">Email Finder</Link></li>
+                <li><Link href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-150">Phone Finder</Link></li>
+                <li><Link href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-150">LinkedIn Prospecting</Link></li>
+                <li><Link href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-150">Multichannel Sequences</Link></li>
               </ul>
             </div>
 
@@ -424,9 +424,9 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
-                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-150">Pricing</Link></li>
+                <li><Link href="/login" className="text-gray-400 hover:text-white transition-colors duration-150">Log in</Link></li>
+                <li><Link href="/signup" className="text-gray-400 hover:text-white transition-colors duration-150">Sign up for free</Link></li>
               </ul>
             </div>
 
@@ -487,16 +487,16 @@ export default function Home() {
             </div>
           </div>
 
-          <ScrollAnimation animation="fadeInUp" delay={800}>
+          <ScrollAnimation animation="fadeInUp" delay={400}>
             <div className="border-t border-gray-800 mt-12 pt-8">
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <p className="text-gray-400 text-sm">
                   © 2025 MarketingPro. All rights reserved.
                 </p>
                 <div className="flex space-x-6 mt-4 md:mt-0">
-                  <a className="text-gray-400 hover:text-white text-sm transition-colors duration-200 hover:scale-105 transform inline-block">Privacy Policy</a>
-                  <a className="text-gray-400 hover:text-white text-sm transition-colors duration-200 hover:scale-105 transform inline-block">Terms of Service</a>
-                  <a className="text-gray-400 hover:text-white text-sm transition-colors duration-200 hover:scale-105 transform inline-block">Cookie Policy</a>
+                  <a className="text-gray-400 hover:text-white text-sm transition-colors duration-150 hover:scale-105 transform inline-block">Privacy Policy</a>
+                  <a className="text-gray-400 hover:text-white text-sm transition-colors duration-150 hover:scale-105 transform inline-block">Terms of Service</a>
+                  <a className="text-gray-400 hover:text-white text-sm transition-colors duration-150 hover:scale-105 transform inline-block">Cookie Policy</a>
                 </div>
               </div>
             </div>

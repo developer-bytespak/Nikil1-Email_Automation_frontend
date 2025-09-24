@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function UnifiedInboxPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -13,7 +14,7 @@ export default function UnifiedInboxPage() {
           {/* CTA Button */}
           <div className="flex flex-col items-center space-y-4">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl transform hover:-translate-y-1 flex items-center space-x-3 group">
-              <span>Get leads' interactions in 1 chat</span>
+              <span>Get leads&apos; interactions in 1 chat</span>
               <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center group-hover:bg-blue-400 transition-colors duration-300">
                 <svg className="w-4 h-4 text-white transform group-hover:translate-x-0.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -95,7 +96,7 @@ export default function UnifiedInboxPage() {
               {/* Left Column - Text Content */}
               <div className="space-y-6">
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-                  Manage all leads' conversations from{' '}
+                  Manage all leads&apos; conversations from{' '}
                   <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-lg">
                     1 convenient spot
                   </span>
@@ -671,11 +672,11 @@ export default function UnifiedInboxPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
-                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
-                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
-                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
-                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
-                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+                <li><Link href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</Link></li>
+                <li><Link href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</Link></li>
+                <li><Link href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</Link></li>
+                <li><Link href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</Link></li>
+                <li><Link href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</Link></li>
               </ul>
             </div>
 
@@ -683,9 +684,9 @@ export default function UnifiedInboxPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
-                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</Link></li>
+                <li><Link href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</Link></li>
+                <li><Link href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</Link></li>
               </ul>
             </div>
 

@@ -398,10 +398,10 @@ export default function LeadDatabasePage() {
                 </h2>
                 <div className="space-y-4 text-lg text-gray-600 mb-8">
                   <p>
-                    Get the most accurate email addresses & phone numbers from the market's top providers, in 1 spot.
+                    Get the most accurate email addresses & phone numbers from the market&apos;s top providers, in 1 spot.
                   </p>
                   <p>
-                    It takes 1 click to enrich your leads' with verified information from the market's top providers.
+                    It takes 1 click to enrich your leads&apos; with verified information from the market&apos;s top providers.
                   </p>
                 </div>
               </div>
@@ -582,11 +582,11 @@ export default function LeadDatabasePage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
-                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
-                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
-                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
-                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
-                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+                <li><Link href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</Link></li>
+                <li><Link href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</Link></li>
+                <li><Link href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</Link></li>
+                <li><Link href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</Link></li>
+                <li><Link href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</Link></li>
               </ul>
             </div>
 
@@ -594,9 +594,9 @@ export default function LeadDatabasePage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
-                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</Link></li>
+                <li><Link href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</Link></li>
+                <li><Link href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</Link></li>
               </ul>
             </div>
 

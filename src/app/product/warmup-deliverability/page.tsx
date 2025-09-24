@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function WarmupDeliverabilityPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -148,7 +149,7 @@ export default function WarmupDeliverabilityPage() {
                   <span className="text-blue-600">Warm up</span> your email address.
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Our warm-up helps you stay out of spam by sending emails in a human way to a highly qualified network of 10,000 users, increasing your email domain's credibility.
+                  Our warm-up helps you stay out of spam by sending emails in a human way to a highly qualified network of 10,000 users, increasing your email domain&apos;s credibility.
                 </p>
               </div>
 
@@ -334,7 +335,7 @@ export default function WarmupDeliverabilityPage() {
                     <div>
                       <p className="text-gray-700 text-sm font-medium">MarketingPro tips</p>
                       <p className="text-gray-600 text-xs mt-1">
-                        You just started warmup. Let's wait a bit before we can trust this score.
+                        You just started warmup. Let&apos;s wait a bit before we can trust this score.
                       </p>
                     </div>
                   </div>
@@ -356,7 +357,7 @@ export default function WarmupDeliverabilityPage() {
                   <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded">Monitor your spam</span> risk at all times
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Get notification alerts for your deliverability score, spot any spam risks, and check the behind-the-scenes work we do for you while you're busy reaching out to your leads.
+                  Get notification alerts for your deliverability score, spot any spam risks, and check the behind-the-scenes work we do for you while you&apos;re busy reaching out to your leads.
                 </p>
               </div>
 
@@ -520,11 +521,11 @@ export default function WarmupDeliverabilityPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
-                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
-                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
-                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
-                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
-                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+                <li><Link href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</Link></li>
+                <li><Link href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</Link></li>
+                <li><Link href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</Link></li>
+                <li><Link href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</Link></li>
+                <li><Link href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</Link></li>
               </ul>
             </div>
 
@@ -532,9 +533,9 @@ export default function WarmupDeliverabilityPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
-                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</Link></li>
+                <li><Link href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</Link></li>
+                <li><Link href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</Link></li>
               </ul>
             </div>
 

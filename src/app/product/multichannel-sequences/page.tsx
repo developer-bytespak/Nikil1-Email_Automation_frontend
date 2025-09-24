@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function MultichannelSequencesPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -14,7 +15,7 @@ export default function MultichannelSequencesPage() {
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              Whether it's email, LinkedIn, or phone, reach your prospects wherever they are, all from one intuitive dashboard  </p>
+              Whether it&apos;s email, LinkedIn, or phone, reach your prospects wherever they are, all from one intuitive dashboard  </p>
             
             <div className="space-y-4 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
@@ -112,7 +113,7 @@ export default function MultichannelSequencesPage() {
                     <span className="text-xs font-medium text-gray-600">lemlist AI</span>
                     <span className="text-xs text-gray-500">12:35</span>
                   </div>
-                  <p className="text-sm text-gray-700">We're always interested in tools that could you elaborate on your product?</p>
+                  <p className="text-sm text-gray-700">We&apos;re always interested in tools that could you elaborate on your product?</p>
                 </div>
                 <div className="bg-gray-100 rounded-lg p-3 animate-fade-in" style={{animationDelay: '2.4s'}}>
                   <p className="text-sm text-gray-700">is the cost of your software?</p>
@@ -155,7 +156,7 @@ export default function MultichannelSequencesPage() {
                 Kickstart Conversations and Automate Follow-Ups
               </h4>
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '1.2s'}}>
-                Use the Email Finder to discover a large portion of your leads' contact information, and then automate tailored follow-ups based on their engagement.              </p>
+                Use the Email Finder to discover a large portion of your leads&apos; contact information, and then automate tailored follow-ups based on their engagement.              </p>
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '1.4s'}}>
                 Automatically tailor your email copy, graphics, and even landing pages  all on autopilot. Personalize at scale, making every interaction feel one-on-one and easy to respond to.              </p>
             </div>
@@ -253,11 +254,11 @@ export default function MultichannelSequencesPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
-                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
-                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
-                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
-                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
-                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+                <li><Link href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</Link></li>
+                <li><Link href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</Link></li>
+                <li><Link href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</Link></li>
+                <li><Link href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</Link></li>
+                <li><Link href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</Link></li>
               </ul>
             </div>
 
@@ -265,9 +266,9 @@ export default function MultichannelSequencesPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
-                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</Link></li>
+                <li><Link href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</Link></li>
+                <li><Link href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</Link></li>
               </ul>
             </div>
 

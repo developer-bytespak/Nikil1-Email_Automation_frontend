@@ -15,7 +15,7 @@ export default function ScrollAnimation({
   children,
   animation = 'fadeInUp',
   delay = 0,
-  duration = 0.8,
+  duration = 0.4,
   threshold = 0.1,
   className = ''
 }: ScrollAnimationProps) {

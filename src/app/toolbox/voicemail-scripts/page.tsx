@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function VoicemailScriptsPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -80,7 +81,7 @@ export default function VoicemailScriptsPage() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Returning a call (vague)</h3>
             <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-              [Morning/afternoon/evening] [Prospect's name], this is [Your name] from [Company name]. I'm returning your call about [Reason for call]. Please give me a call back at [Your phone number] when you have a moment. Thanks!
+              [Morning/afternoon/evening] [Prospect&apos;s name], this is [Your name] from [Company name]. I&apos;m returning your call about [Reason for call]. Please give me a call back at [Your phone number] when you have a moment. Thanks!
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
@@ -99,7 +100,7 @@ export default function VoicemailScriptsPage() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Events and trade shows (met you)</h3>
             <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-              Hi [Prospect's name], this is [Your name] from [Company name]. We met at [Event name] and you mentioned [Specific topic discussed]. I wanted to follow up on [Next steps]...
+              Hi [Prospect&apos;s name], this is [Your name] from [Company name]. We met at [Event name] and you mentioned [Specific topic discussed]. I wanted to follow up on [Next steps]...
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
@@ -118,7 +119,7 @@ export default function VoicemailScriptsPage() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Returning a call (detailed)</h3>
             <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-              [Morning/afternoon/evening] [Prospect's name], this is [Your name] from [Company name]. I'm calling about [Specific reason] that we discussed on [Date/time]. I have [Specific information] ready for you...
+              [Morning/afternoon/evening] [Prospect&apos;s name], this is [Your name] from [Company name]. I&apos;m calling about [Specific reason] that we discussed on [Date/time]. I have [Specific information] ready for you...
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
@@ -137,7 +138,7 @@ export default function VoicemailScriptsPage() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Events and trade shows (met...)</h3>
             <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-              Hi [Prospect's name], this is [Your name] from [Company name]. We connected at [Event name] and I wanted to share [Specific value proposition] that could help with [Their challenge]...
+              Hi [Prospect&apos;s name], this is [Your name] from [Company name]. We connected at [Event name] and I wanted to share [Specific value proposition] that could help with [Their challenge]...
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
@@ -156,7 +157,7 @@ export default function VoicemailScriptsPage() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Basic voicemail</h3>
             <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-              Hi [Prospect's name], this is [Your name] from [Company name]. I'm calling to discuss [Brief value proposition] that could benefit [Their company/role]. Please call me back at [Your phone number]...
+              Hi [Prospect&apos;s name], this is [Your name] from [Company name]. I&apos;m calling to discuss [Brief value proposition] that could benefit [Their company/role]. Please call me back at [Your phone number]...
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
@@ -175,7 +176,7 @@ export default function VoicemailScriptsPage() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Partner acquisition</h3>
             <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-              Hi [Prospect's name], this is [Your name] from [Company name]. I'm reaching out about a potential partnership opportunity that could [Specific benefit]. I'd love to discuss how we can [Mutual value]...
+              Hi [Prospect&apos;s name], this is [Your name] from [Company name]. I&apos;m reaching out about a potential partnership opportunity that could [Specific benefit]. I&apos;d love to discuss how we can [Mutual value]...
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
@@ -225,11 +226,11 @@ export default function VoicemailScriptsPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
-                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
-                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
-                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
-                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
-                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+                <li><Link href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</Link></li>
+                <li><Link href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</Link></li>
+                <li><Link href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</Link></li>
+                <li><Link href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</Link></li>
+                <li><Link href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</Link></li>
               </ul>
             </div>
 
@@ -237,9 +238,9 @@ export default function VoicemailScriptsPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
-                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</Link></li>
+                <li><Link href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</Link></li>
+                <li><Link href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</Link></li>
               </ul>
             </div>
 

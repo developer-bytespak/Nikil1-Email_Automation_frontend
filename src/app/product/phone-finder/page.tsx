@@ -13,7 +13,7 @@ export default function PhoneFinderPage() {
                 Get real numbers, reach leads directly, & <span className="bg-blue-100 px-2 py-1 rounded">convert 3x faster</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Our waterfall enrichment gets you accurate phone numbers from the market's top providers, in 1 spot.
+                Our waterfall enrichment gets you accurate phone numbers from the market&apos;s top providers, in 1 spot.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <Link href="/signup">
@@ -23,7 +23,7 @@ export default function PhoneFinderPage() {
                 </Link>
               </div>
               <p className="text-sm text-gray-500">
-                Zero commitment. Free "not found" lookups. Keep unused credits.
+                Zero commitment. Free &quot;not found&quot; lookups. Keep unused credits.
               </p>
             </div>
 
@@ -256,7 +256,7 @@ export default function PhoneFinderPage() {
                 Grab phone numbers directly from LinkedIn
               </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Use our Chrome extension to extract leads' numbers directly from their profiles or bulk searches. Send them to campaigns or contact lists instantly, from free LinkedIn or Navigator accounts.
+                Use our Chrome extension to extract leads&apos; numbers directly from their profiles or bulk searches. Send them to campaigns or contact lists instantly, from free LinkedIn or Navigator accounts.
               </p>
             </div>
 
@@ -370,7 +370,7 @@ export default function PhoneFinderPage() {
                             <path d="M8 5v14l11-7z"/>
                           </svg>
                         </div>
-                        Daniel's campaign
+                        Daniel&apos;s campaign
                       </div>
                       <div className="flex items-center gap-2 text-sm text-gray-700">
                         <div className="w-4 h-4 bg-gray-100 rounded flex items-center justify-center">
@@ -466,11 +466,11 @@ export default function PhoneFinderPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
-                <li><a href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</a></li>
-                <li><a href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</a></li>
-                <li><a href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</a></li>
-                <li><a href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</a></li>
-                <li><a href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</a></li>
+                <li><Link href="/product/lead-database" className="text-gray-400 hover:text-white transition-colors duration-200">Lead Database</Link></li>
+                <li><Link href="/product/email-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Email Finder</Link></li>
+                <li><Link href="/product/phone-finder" className="text-gray-400 hover:text-white transition-colors duration-200">Phone Finder</Link></li>
+                <li><Link href="/product/linkedin-prospecting" className="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn Prospecting</Link></li>
+                <li><Link href="/product/multichannel-sequences" className="text-gray-400 hover:text-white transition-colors duration-200">Multichannel Sequences</Link></li>
               </ul>
             </div>
 
@@ -478,9 +478,9 @@ export default function PhoneFinderPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">GET STARTED</h4>
               <ul className="space-y-2">
-                <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></li>
-                <li><a href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</a></li>
-                <li><a href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</a></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">Pricing</Link></li>
+                <li><Link href="/login" className="text-gray-400 hover:text-white transition-colors duration-200">Log in</Link></li>
+                <li><Link href="/signup" className="text-gray-400 hover:text-white transition-colors duration-200">Sign up for free</Link></li>
               </ul>
             </div>
 
