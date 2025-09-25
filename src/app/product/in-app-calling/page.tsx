@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 export default function InAppCallingPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -6,28 +7,36 @@ export default function InAppCallingPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Text Content */}
-          <div className="space-y-8 animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              <span className="text-blue-600">Tired of Cold Calling?</span>{' '}
-              Phone with Other Channels for{' '}
-              <span className="text-blue-600">3x the Success</span>
-            </h1>
+          <div className="space-y-8">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <span className="text-blue-600">Tired of Cold Calling?</span>{' '}
+                Phone with Other Channels for{' '}
+                <span className="text-blue-600">3x the Success</span>
+              </h1>
+            </ScrollAnimation>
             
-            <p className="text-xl text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-            Reach out to leads through inboxes, follow up with warm calls, and close deals faster all from one platform.            </p>
-            
-            <div className="space-y-4 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                Try for free
-              </button>
-              <p className="text-sm text-gray-500">
-                14-day free trial. No credit card required.
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Reach out to leads through inboxes, follow up with warm calls, and close deals faster all from one platform.
               </p>
-            </div>
+            </ScrollAnimation>
+            
+            <ScrollAnimation animation="fadeInUp" delay={600}>
+              <div className="space-y-4">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                  Try for free
+                </button>
+                <p className="text-sm text-gray-500">
+                  14-day free trial. No credit card required.
+                </p>
+              </div>
+            </ScrollAnimation>
           </div>
 
           {/* Right Side - Workflow Diagram and Dialer Interface */}
-          <div className="relative animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+          <ScrollAnimation animation="fadeInRight" delay={800}>
+            <div className="relative">
             {/* Background Workflow Diagram */}
             <div className="relative bg-gray-50 rounded-2xl p-8 border-2 border-dashed border-gray-200 animate-pulse-slow">
               <div className="space-y-6">
@@ -122,19 +131,23 @@ export default function InAppCallingPage() {
                 </button>
               </div>
             </div>
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </div>
 
       {/* Benefits Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-8">
-            Talking to leads by phone makes you 3x more likely to close a deal.
-          </h2>
-        </div>
+        <ScrollAnimation animation="fadeInDown" delay={100}>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-8">
+              Talking to leads by phone makes you 3x more likely to close a deal.
+            </h2>
+          </div>
+        </ScrollAnimation>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/* Row 1 */}
           <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
             <div className="text-center">
@@ -236,75 +249,101 @@ export default function InAppCallingPage() {
               <h3 className="text-lg font-semibold text-blue-900">Shorten sales cycle</h3>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Section 1 */}
         <div className="mb-24">
-          <div className="text-center mb-16 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-            Want your sales calls to hit different?
-            Make sure they’ve seen you elsewhere first
-            </h2>
-           
-          </div>
-          <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-            <div className="space-y-6 animate-fade-in-left" style={{animationDelay: '0.8s'}}>
-              <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '1s'}}>
-              Get verified business numbers that actually connect
-              </h4>
-              <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '1.2s'}}>
-              Our waterfall enrichment process pulls reliable phone numbers from the industry’s top data sources no extra tools or subscriptions needed.             </p>
-              <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '1.4s'}}>
-              Every month, you’ll receive a set of free numbers from trusted networks and databases. Need more? Just pay as you go, and only for the successful finds.     </p>       </div>
-            <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-right hover:scale-105 transition-all duration-300" style={{animationDelay: '1s'}}>
-            <img 
-               src="/images/AC1.png.png" 
-               alt="WhatsApp Follow-Up Visual" 
-               className="w-full h-full object-cover rounded-lg"
-              />             
-               </div>
-          </div>
+          <ScrollAnimation animation="fadeInDown" delay={100}>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                Want your sales calls to hit different?
+                Make sure they&apos;ve seen you elsewhere first
+              </h2>
+            </div>
+          </ScrollAnimation>
+          
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div className="space-y-6">
+                  <h4 className="text-2xl font-bold text-gray-900">
+                    Get verified business numbers that actually connect
+                  </h4>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Our waterfall enrichment process pulls reliable phone numbers from the industry&apos;s top data sources no extra tools or subscriptions needed.
+                  </p>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Every month, you&apos;ll receive a set of free numbers from trusted networks and databases. Need more? Just pay as you go, and only for the successful finds.
+                  </p>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInRight" delay={300}>
+                <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/images/AC1.png.png" 
+                    alt="WhatsApp Follow-Up Visual" 
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </ScrollAnimation>
+            </div>
+          </ScrollAnimation>
         </div>
 
         {/* Section 2 */}
         <div className="mb-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-            <div className="space-y-6 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
-              <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              Seamlessly layer calls into your email and LinkedIn outreach.
-              </h4>
-              <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-              Transform text-based touchpoints into real conversations with call steps. Use engagement-triggered reminders to reach out when leads already recognize your name.</p>              
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div className="space-y-6">
+                  <h4 className="text-2xl font-bold text-gray-900">
+                    Seamlessly layer calls into your email and LinkedIn outreach.
+                  </h4>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Transform text-based touchpoints into real conversations with call steps. Use engagement-triggered reminders to reach out when leads already recognize your name.
+                  </p>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInRight" delay={300}>
+                <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/images/AC2.png.png" 
+                    alt="WhatsApp Follow-Up Visual" 
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </ScrollAnimation>
             </div>
-            <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
-            <img 
-               src="/images/AC2.png.png" 
-               alt="WhatsApp Follow-Up Visual" 
-               className="w-full h-full object-cover rounded-lg"
-              />            
-              </div>
-          </div>
+          </ScrollAnimation>
         </div>
 
         {/* Section 3 */}
         <div className="mb-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-            <div className="space-y-6 animate-fade-in-left" style={{animationDelay: '0.2s'}}>
-              <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              Call leads at the right moment with the built-in dialer.            </h4>
-              <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-              Make instant calls directly from profiles or engagement-triggered tasks—no extra tools required. Enter focus mode, dial through the native VoIP system, and access all the context you need for top performance.</p>
-              
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div className="space-y-6">
+                  <h4 className="text-2xl font-bold text-gray-900">
+                    Call leads at the right moment with the built-in dialer.
+                  </h4>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Make instant calls directly from profiles or engagement-triggered tasks—no extra tools required. Enter focus mode, dial through the native VoIP system, and access all the context you need for top performance.
+                  </p>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInRight" delay={300}>
+                <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/images/AC3.png.png" 
+                    alt="WhatsApp Follow-Up Visual" 
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </ScrollAnimation>
             </div>
-            <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-right hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
-            <img 
-               src="/images/AC3.png.png" 
-               alt="WhatsApp Follow-Up Visual" 
-               className="w-full h-full object-cover rounded-lg"
-              />            
-            </div>
-          </div>
+          </ScrollAnimation>
         </div>
         <div className="mb-24">
         <div className="mb-24">
@@ -317,55 +356,58 @@ export default function InAppCallingPage() {
 
         {/* Section 4 */}
         <div className="mb-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-       <div className="space-y-6 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
-      <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-      Turn every call into insights that drive action.
-      </h4>
-      <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-      Recordings are automatically transcribed and AI-summarized, so you can review, share, and sync updates across your CRM whether HubSpot, Salesforce, or Pipedrive without missing a single detail.      </p>
-      
-    </div>
-    <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
-      <img 
-        src="/images/AC4.png.png" 
-        alt="WhatsApp Follow-Up Visual" 
-        className="w-full h-full object-cover rounded-lg"
-      />
-      </div>
-     </div>
-      </div>
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div className="space-y-6">
+                  <h4 className="text-2xl font-bold text-gray-900">
+                    Turn every call into insights that drive action.
+                  </h4>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Recordings are automatically transcribed and AI-summarized, so you can review, share, and sync updates across your CRM whether HubSpot, Salesforce, or Pipedrive without missing a single detail.
+                  </p>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInRight" delay={300}>
+                <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] hover:scale-105 transition-all duration-300">
+                  <img 
+                    src="/images/AC4.png.png" 
+                    alt="WhatsApp Follow-Up Visual" 
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </ScrollAnimation>
+            </div>
+          </ScrollAnimation>
+        </div>
       {/* Section 5 */}
       <div className="mb-24">
-      <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-    {/* Left Section */}
-    <div className="space-y-6 animate-fade-in-right" style={{ animationDelay: '0.2s' }}>
-      <h4
-        className="text-2xl font-bold text-gray-900 animate-fade-in-up"
-        style={{ animationDelay: '0.4s' }}
-      >
-        Track your team’s calling activity and optimize performance.
-      </h4>
-      <p
-        className="text-lg text-gray-600 leading-relaxed animate-fade-in-up"
-        style={{ animationDelay: '0.6s' }}
-      >
-        Monitor call volumes, durations, peak times, and engagement insights to drive better
-        results. Apply filters by date, lead, company, caller, or status to boost your
-        call-to-meeting ratio.
-      </p>
-    </div>
-
-    {/* Right Section */}
-    <div className="bg-gray-50 rounded-2xl flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{ animationDelay: '0.4s' }}>
-      <img
-        src="/images/AC5.png.png"
-        alt="WhatsApp Follow-Up Visual"
-        className="w-full h-full object-cover rounded-lg"
-      />
-    </div>
-  </div>
-       </div>
+        <ScrollAnimation animation="fadeInUp" delay={200}>
+          <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+            <ScrollAnimation animation="fadeInLeft" delay={400}>
+              <div className="space-y-6">
+                <h4 className="text-2xl font-bold text-gray-900">
+                  Track your teams&apos; calling activity and optimize performance.
+                </h4>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Monitor call volumes, durations, peak times, and engagement insights to drive better
+                  results. Apply filters by date, lead, company, caller, or status to boost your
+                  call-to-meeting ratio.
+                </p>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInRight" delay={300}>
+              <div className="bg-gray-50 rounded-2xl flex items-center justify-center min-h-[400px] hover:scale-105 transition-all duration-300">
+                <img
+                  src="/images/AC5.png.png"
+                  alt="WhatsApp Follow-Up Visual"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </ScrollAnimation>
+          </div>
+        </ScrollAnimation>
+      </div>
 
 
      

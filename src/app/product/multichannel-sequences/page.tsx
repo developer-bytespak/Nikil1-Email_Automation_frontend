@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 export default function MultichannelSequencesPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -6,16 +7,23 @@ export default function MultichannelSequencesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Text Content */}
+
           <div className="space-y-8 animate-fade-in-up">
+          <ScrollAnimation animation="fadeInUp" delay={200}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               Email, LinkedIn, or phone?{' '}
               <span className="text-blue-600 animate-pulse">Meet your leads</span>{' '}
               <span className="text-blue-600 animate-pulse" style={{animationDelay: '0.5s'}}>wherever they are.</span>{' '}
               From 1 dashboard.
             </h1>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={400}>
             
             <p className="text-xl text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              Whether it&apos;s email, LinkedIn, or phone, reach your prospects wherever they are, all from one intuitive dashboard  </p>
+              Whether it&apos;s email, LinkedIn, or phone, reach your prospects wherever they are, all from one intuitive dashboard 
+               </p>
+               </ScrollAnimation>
+               <ScrollAnimation animation="fadeInUp" delay={600}>
             
             <div className="space-y-4 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
@@ -25,6 +33,7 @@ export default function MultichannelSequencesPage() {
                 14-day free trial. No credit card required.
               </p>
             </div>
+            </ScrollAnimation>
           </div>
 
           {/* Right Side - UI Mockups */}
@@ -110,7 +119,7 @@ export default function MultichannelSequencesPage() {
               <div className="space-y-3 mb-4">
                 <div className="bg-gray-100 rounded-lg p-3 animate-fade-in" style={{animationDelay: '2.2s'}}>
                   <div className="flex items-center space-x-2 mb-1">
-                    <span className="text-xs font-medium text-gray-600">lemlist AI</span>
+                    <span className="text-xs font-medium text-gray-600">AI</span>
                     <span className="text-xs text-gray-500">12:35</span>
                   </div>
                   <p className="text-sm text-gray-700">We&apos;re always interested in tools that could you elaborate on your product?</p>
@@ -141,6 +150,7 @@ export default function MultichannelSequencesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Section 1 */}
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInDown" delay={100}>
           <div className="text-center mb-16 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               Tired of Waiting for Replies?
@@ -150,8 +160,13 @@ export default function MultichannelSequencesPage() {
 
             </h2>
           </div>
+          </ScrollAnimation>
+
+
+          <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-            <div className="space-y-6 animate-fade-in-left" style={{animationDelay: '0.8s'}}>
+          <ScrollAnimation animation="fadeInLeft" delay={400}>
+            <div>
               <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '1s'}}>
                 Kickstart Conversations and Automate Follow-Ups
               </h4>
@@ -160,20 +175,26 @@ export default function MultichannelSequencesPage() {
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '1.4s'}}>
                 Automatically tailor your email copy, graphics, and even landing pages  all on autopilot. Personalize at scale, making every interaction feel one-on-one and easy to respond to.              </p>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInRight" delay={300}>
             <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-right hover:scale-105 transition-all duration-300" style={{animationDelay: '1s'}}>
             <img 
                src="/images/MS1.png.png" 
                alt="WhatsApp Follow-Up Visual" 
                className="w-full h-full object-cover rounded-lg"
               />             
-               </div>
+            </div>
+            </ScrollAnimation>
           </div>
+          </ScrollAnimation>
         </div>
 
         {/* Section 2 */}
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-            <div className="space-y-6 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
+          <ScrollAnimation animation="fadeInLeft" delay={400}>
+            <div>
               <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               Email Not Enough? Connect with Leads on LinkedIn Automatically
               </h4>
@@ -182,6 +203,8 @@ export default function MultichannelSequencesPage() {
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.8s'}}>
               Leverage the Chrome extension to instantly find, enrich, and export leads into your campaigns, all in just seconds!              </p>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInRight" delay={300}>
             <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
             <img 
                src="/images/MS2.png.png" 
@@ -189,13 +212,17 @@ export default function MultichannelSequencesPage() {
                className="w-full h-full object-cover rounded-lg"
               />            
               </div>
+            </ScrollAnimation>
           </div>
+          </ScrollAnimation>
         </div>
 
         {/* Section 3 */}
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-            <div className="space-y-6 animate-fade-in-left" style={{animationDelay: '0.2s'}}>
+          <ScrollAnimation animation="fadeInLeft" delay={400}>
+            <div>
               <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               Accelerate Your Pipeline and Call Warm Leads Directly              </h4>
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
@@ -203,6 +230,8 @@ export default function MultichannelSequencesPage() {
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.8s'}}>
               Set call reminders and dial directly from your platform using native calling, Aircall, or Ringover. Every conversation is tracked, summarized, and shareable to ensure maximum impact.              </p>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInRight" delay={300}>
             <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-right hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
             <img 
                src="/images/MS3.png.png" 
@@ -210,32 +239,41 @@ export default function MultichannelSequencesPage() {
                className="w-full h-full object-cover rounded-lg"
               />            
             </div>
+            </ScrollAnimation>
           </div>
+          </ScrollAnimation>
         </div>
 
         {/* Section 4 */}
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
         <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
-    <div className="space-y-6 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
-      <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-        Convert Silent Leads into Clients with WhatsApp Follow-Ups  
-      </h4>
-      <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-        Incorporate WhatsApp steps into your outreach sequence to confirm meetings, follow up after demos, re-engage cold leads, and more.  
-      </p>
-      <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-        Send quick, personalized nudges at scale with built-in warm-up, ensuring your number stays safe and your messages get the attention they deserve.  
-      </p>
+        <ScrollAnimation animation="fadeInLeft" delay={400}>
+        <div>
+          <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+            Convert Silent Leads into Clients with WhatsApp Follow-Ups  
+         </h4>
+          <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+           Incorporate WhatsApp steps into your outreach sequence to confirm meetings, follow up after demos, re-engage cold leads, and more.  
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+           Send quick, personalized nudges at scale with built-in warm-up, ensuring your number stays safe and your messages get the attention they deserve.  
+          </p>
+         </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInRight" delay={300}>
+         <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
+           <img 
+            src="/images/MS4.png.png" 
+            alt="WhatsApp Follow-Up Visual" 
+            className="w-full h-full object-cover rounded-lg"
+          />
     </div>
-    <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
-      <img 
-        src="/images/MS4.png.png" 
-        alt="WhatsApp Follow-Up Visual" 
-        className="w-full h-full object-cover rounded-lg"
-      />
+            </ScrollAnimation>
     </div>
+
+  </ScrollAnimation>
   </div>
-</div>
 
       </div>
       <footer className="bg-gray-900 text-white py-16">

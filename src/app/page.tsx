@@ -69,7 +69,7 @@ export default function Home() {
           </ScrollAnimation>
 
           {/* Workflow Diagram Card - Overlapping */}
-          <ScrollAnimation animation="slideInUp" delay={800}>
+          <ScrollAnimation animation="slideInUp" delay={100}>
             <div className="relative -mt-14">
               {/* Dotted Background Pattern */}
               <div className="absolute inset-0 opacity-20 animate-pulse-slow" style={{
@@ -120,7 +120,7 @@ export default function Home() {
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={400}>
+                  <ScrollAnimation animation="fadeInRight" delay={200}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H2.png.png" 
@@ -134,10 +134,10 @@ export default function Home() {
             </ScrollAnimation>
 
             {/* Card 2 */}
-            <ScrollAnimation animation="fadeInUp" delay={500}>
+            <ScrollAnimation animation="fadeInUp" delay={200}>
               <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={600}>
+                  <ScrollAnimation animation="fadeInLeft" delay={300}>
                     <div>
                       <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-200">
                         Personalize at scale with AI—without losing the human touch.
@@ -147,7 +147,7 @@ export default function Home() {
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={700}>
+                  <ScrollAnimation animation="fadeInRight" delay={200}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H3.png.png" 
@@ -161,10 +161,10 @@ export default function Home() {
             </ScrollAnimation>
 
             {/* Card 3 */}
-            <ScrollAnimation animation="fadeInUp" delay={800}>
+            <ScrollAnimation animation="fadeInUp" delay={200}>
               <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={900}>
+                  <ScrollAnimation animation="fadeInLeft" delay={300}>
                     <div>
                       <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-200">
                         Run sequences across multiple channels, all from one place.
@@ -174,7 +174,7 @@ export default function Home() {
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={1000}>
+                  <ScrollAnimation animation="fadeInRight" delay={200}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H4.png.png" 
@@ -188,10 +188,10 @@ export default function Home() {
             </ScrollAnimation>
 
             {/* Card 4 */}
-            <ScrollAnimation animation="fadeInUp" delay={1100}>
+            <ScrollAnimation animation="fadeInUp" delay={200}>
               <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <ScrollAnimation animation="fadeInLeft" delay={1200}>
+                  <ScrollAnimation animation="fadeInLeft" delay={300}>
                     <div>
                       <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-200">
                         Stay out of the spam folder for good.
@@ -201,7 +201,7 @@ export default function Home() {
                       </p>
                     </div>
                   </ScrollAnimation>
-                  <ScrollAnimation animation="fadeInRight" delay={1300}>
+                  <ScrollAnimation animation="fadeInRight" delay={300}>
                     <div className="flex justify-center">
                       <img 
                         src="/images/H5.png.png" 
@@ -253,7 +253,7 @@ export default function Home() {
                       </ScrollAnimation>
                       
                       {/* Left Column */}
-                      <ScrollAnimation animation="fadeInLeft" delay={500}>
+                      <ScrollAnimation animation="fadeInLeft" delay={300}>
                         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4">
                           <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4 animate-float" style={{animationDelay: '0.5s'}}>
                             <span className="text-white text-sm font-bold">P</span>
@@ -268,7 +268,7 @@ export default function Home() {
                       </ScrollAnimation>
                       
                       {/* Right Column */}
-                      <ScrollAnimation animation="fadeInRight" delay={600}>
+                      <ScrollAnimation animation="fadeInRight" delay={300}>
                         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4">
                           <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4 animate-float" style={{animationDelay: '0.7s'}}>
                             <span className="text-white text-sm font-bold">S</span>
@@ -283,7 +283,7 @@ export default function Home() {
                       </ScrollAnimation>
                       
                       {/* Bottom Row */}
-                      <ScrollAnimation animation="fadeInUp" delay={700}>
+                      <ScrollAnimation animation="fadeInUp" delay={500}>
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-4">
                           <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center animate-float" style={{animationDelay: '2s'}}>
                             <span className="text-white text-sm font-bold">S</span>
@@ -302,7 +302,7 @@ export default function Home() {
                 </div>
               </div>
               
-                <ScrollAnimation animation="fadeInUp" delay={800}>
+                <ScrollAnimation animation="fadeInUp" delay={500}>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Plug into any tool you use...
                   </h3>
@@ -379,7 +379,7 @@ export default function Home() {
                   </ScrollAnimation>
                 </div>
                 
-                <ScrollAnimation animation="fadeInUp" delay={700}>
+                <ScrollAnimation animation="fadeInUp" delay={500}>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-6">
                     and run it straight from your CRM.
                   </h3>

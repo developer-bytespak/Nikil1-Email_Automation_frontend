@@ -3,31 +3,37 @@
 import Link from 'next/link';
 import { navData } from '../../data/navData';
 
-export default function ProductMegaCard() {
+interface ProductMegaCardProps {
+  closeDropdown: () => void;
+}
+
+export default function ProductMegaCard({ closeDropdown }: ProductMegaCardProps) {
+
   return (
-    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-8 w-[1000px] max-w-[90vw]">
-      <div className="flex gap-8">
-        {/* Main Content - 3 Columns */}
-        <div className="flex-1 grid grid-cols-3 gap-8">
+    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-4 md:p-6 w-full max-w-[90vw] md:w-[1000px] md:max-w-[80vw] min-h-fit h-auto md:max-h-none relative max-h-[70vh] overflow-y-auto md:overflow-visible scroll-smooth">
+      <div className="flex flex-col lg:flex-row gap-3 md:gap-8">
+        {/* Main Content - Responsive Grid */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 pb-6 md:pb-0">
           {navData.product.columns.map((column, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide">
+            <div key={index} className="space-y-4 md:space-y-4">
+              <h3 className="text-sm md:text-sm font-bold text-gray-900 uppercase tracking-wide">
                 {column.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm md:text-sm text-gray-600 leading-relaxed">
                 {column.subtext}
               </p>
-              <div className="space-y-3">
+              <div className="space-y-3 md:space-y-3">
                 {column.features.map((feature, featureIndex) => (
                   <Link
                     key={featureIndex}
                     href={feature.href}
-                    className="flex items-center space-x-3 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md transition-all duration-200 group"
+                    onClick={closeDropdown}
+                    className="flex items-center space-x-3 md:space-x-3 text-sm md:text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 md:px-3 py-3 rounded-md transition-all duration-200 group"
                   >
-                    <div className="w-6 h-6 bg-gray-100 rounded flex items-center justify-center group-hover:bg-blue-50 transition-colors duration-200">
+                    <div className="w-6 h-6 md:w-6 md:h-6 bg-gray-100 rounded flex items-center justify-center group-hover:bg-blue-50 transition-colors duration-200 flex-shrink-0">
                       {getFeatureIcon(feature.title)}
                     </div>
-                    <span>{feature.title}</span>
+                    <span className="truncate">{feature.title}</span>
                   </Link>
                 ))}
               </div>
@@ -35,30 +41,31 @@ export default function ProductMegaCard() {
           ))}
         </div>
 
-        {/* Integration Card (updated) */}
-        <div className="w-[320px] h-[240px] bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 flex flex-col justify-between shadow-lg text-center">
-          <h3 className="text-white font-semibold text-sm leading-snug">
+        {/* Integration Card - Responsive */}
+        <div className="w-full lg:w-[320px] h-auto lg:h-[240px] bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 md:p-6 flex flex-col justify-between shadow-lg text-center">
+          <h3 className="text-white font-semibold text-sm md:text-sm leading-snug mb-4 lg:mb-0">
             Integrate your stack to <span className="text-blue-400 font-bold">MarketingPro</span> & run entire pipeline in 1 spot
           </h3>
 
           {/* Center logo with orbit effect */}
-          <div className="flex-1 flex items-center justify-center relative">
+          <div className="flex-1 flex items-center justify-center relative my-4 lg:my-0">
             {/* Main logo */}
-            <div className="w-14 h-14 bg-blue-600 rounded-lg flex items-center justify-center shadow-md z-10">
-              <span className="text-white font-bold text-lg">M</span>
+            <div className="w-10 h-10 md:w-14 md:h-14 bg-blue-600 rounded-lg flex items-center justify-center shadow-md z-10">
+              <span className="text-white font-bold text-sm md:text-lg">M</span>
             </div>
 
             {/* Orbit circles (background effect) */}
-            <div className="absolute w-32 h-32 rounded-full border border-gray-700 opacity-40 animate-pulse"></div>
-            <div className="absolute w-48 h-48 rounded-full border border-gray-700 opacity-20"></div>
+            <div className="absolute w-20 h-20 md:w-32 md:h-32 rounded-full border border-gray-700 opacity-40 animate-pulse"></div>
+            <div className="absolute w-32 h-32 md:w-48 md:h-48 rounded-full border border-gray-700 opacity-20"></div>
           </div>
 
           {/* CTA Button */}
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-md">
+          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-3 md:px-4 py-3 rounded-lg text-sm md:text-sm font-medium transition-colors duration-200 shadow-md">
             Check MarketingPro integrations
           </button>
         </div>
       </div>
+      
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 export default function AIPersonalizationPage() {
   return (
     <div className="min-h-screen bg-white pt-8">
@@ -7,6 +8,7 @@ export default function AIPersonalizationPage() {
         <div className="grid lg:grid-cols-2 gap-10 items-start">
           {/* Left Side - Text Content */}
           <div className="space-y-6 lg:space-y-8 self-center">
+          <ScrollAnimation animation="fadeInUp" delay={200}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               <span className="block">Engage with leads</span>
               <span className="block">in a{' '}
@@ -22,11 +24,13 @@ export default function AIPersonalizationPage() {
                 </span>
               </span>
             </h1>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={400}>
             
             <p className="text-xl text-gray-600 leading-relaxed">
             Need support finding, reaching, and converting prospects? AI acts like your top-performing sales rep—only faster.
             </p>
-            
+            </ScrollAnimation>
             <div className="space-y-4">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl transform hover:-translate-y-1">
                 Start for free
@@ -163,10 +167,12 @@ export default function AIPersonalizationPage() {
 
       {/* Human vs AI Email Section */}
       <section className="py-16">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-10">
             Which cold email is written by a human?
           </h2>
+          
 
           {/* Blue gradient board with two cards */}
           <div className="rounded-3xl bg-gradient-to-b from-blue-500 to-blue-600 p-6 sm:p-8 shadow-2xl">
@@ -255,24 +261,34 @@ export default function AIPersonalizationPage() {
             </div>
           </div>
         </div>
+        </ScrollAnimation>
       </section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Section 1 */}
+
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInDown" delay={100}>
           <div className="text-center mb-16 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             Let AI take the lead connect with the right people, at the right moment, with the perfect message.
             </h2>
            
           </div>
+          </ScrollAnimation>
+
+          <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+          <ScrollAnimation animation="fadeInLeft" delay={400}>
             <div className="space-y-6 animate-fade-in-left" style={{animationDelay: '0.8s'}}>
               <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '1s'}}>
               Easily segment leads for precise targeting.
               </h4>
               
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '1.4s'}}>
-              AI extracts insights like company size, seniority, job openings, and fundraising, helping you connect with the most relevant prospects and accelerate results.     </p>       </div>
+              AI extracts insights like company size, seniority, job openings, and fundraising, helping you connect with the most relevant prospects and accelerate results.     </p>       
+              </div>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInRight" delay={300}>
             <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-right hover:scale-105 transition-all duration-300" style={{animationDelay: '1s'}}>
             <img 
                src="/images/AIP1.png.png" 
@@ -280,18 +296,24 @@ export default function AIPersonalizationPage() {
                className="w-full h-full object-cover rounded-lg"
               />             
                </div>
+               </ScrollAnimation>
           </div>
+          </ScrollAnimation>
         </div>
 
         {/* Section 2 */}
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+          <ScrollAnimation animation="fadeInLeft" delay={400}>
             <div className="space-y-6 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
               <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               Use clean data for natural, human-like messages. </h4>
               <p className="text-lg text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               With automatic data cleaning—names, dates, titles, and more—you’ll avoid robotic outreach and keep conversations authentic..</p>              
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInRight" delay={300}>
             <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
             <img 
                src="/images/AIP2.png.png" 
@@ -299,12 +321,16 @@ export default function AIPersonalizationPage() {
                className="w-full h-full object-cover rounded-lg"
               />            
               </div>
+              </ScrollAnimation>
           </div>
+          </ScrollAnimation>
         </div>
 
         {/* Section 3 */}
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+          <ScrollAnimation animation="fadeInLeft" delay={400}>
             <div className="space-y-6 animate-fade-in-left" style={{animationDelay: '0.2s'}}>
               <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               Craft optimized sequences in one click.           </h4>
@@ -312,6 +338,8 @@ export default function AIPersonalizationPage() {
               Just share your outreach details, and AI will build multichannel sequences from scratch—timed perfectly and tailored with the right messages.</p>
               
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInRight" delay={300}>
             <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-right hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
             <img 
                src="/images/AIP3.png.png" 
@@ -319,7 +347,9 @@ export default function AIPersonalizationPage() {
                className="w-full h-full object-cover rounded-lg"
               />            
             </div>
+            </ScrollAnimation>
           </div>
+          </ScrollAnimation>
         </div>
         <div className="mb-24">
         <div className="mb-24">
@@ -332,7 +362,9 @@ export default function AIPersonalizationPage() {
 
         {/* Section 4 */}
         <div className="mb-24">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
         <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+        <ScrollAnimation animation="fadeInLeft" delay={400}>
        <div className="space-y-6 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
       <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
       Make outreach personal with the right details.
@@ -342,6 +374,8 @@ export default function AIPersonalizationPage() {
       Leads expect you to understand them and their business. AI gathers insights like competitor data and pain points from LinkedIn profiles, websites, and more—so you can personalize every message at scale, without the research grind.     </p>
       
     </div>
+    </ScrollAnimation>
+    <ScrollAnimation animation="fadeInRight" delay={300}>
     <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
       <img 
         src="/images/AIP4.png.png" 
@@ -349,11 +383,15 @@ export default function AIPersonalizationPage() {
         className="w-full h-full object-cover rounded-lg"
       />
       </div>
+      </ScrollAnimation>
      </div>
+      </ScrollAnimation>
       </div>
       {/* Section 5 */}
       <div className="mb-24">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
         <div className="grid lg:grid-cols-2 gap-12 items-center border border-gray-300 rounded-2xl shadow-lg p-8">
+        <ScrollAnimation animation="fadeInLeft" delay={400}>
        <div className="space-y-6 animate-fade-in-right" style={{animationDelay: '0.2s'}}>
       <h4 className="text-2xl font-bold text-gray-900 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
       Fine-tune every message for maximum impact.
@@ -362,6 +400,8 @@ export default function AIPersonalizationPage() {
       You don’t need to be a copywriter—AI adjusts tone, length, and delivery so every word helps convert.       </p>
       
     </div>
+    </ScrollAnimation>
+    <ScrollAnimation animation="fadeInRight" delay={300}>
     <div className="bg-white-100 rounded-2xl p-8 flex items-center justify-center min-h-[400px] animate-fade-in-left hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
       <img 
         src="/images/AIP5.png.png" 
@@ -369,7 +409,9 @@ export default function AIPersonalizationPage() {
         className="w-full h-full object-cover rounded-lg"
       />
       </div>
+      </ScrollAnimation>
      </div>
+      </ScrollAnimation>
       </div>
       </div>
       <footer className="bg-gray-900 text-white py-16">

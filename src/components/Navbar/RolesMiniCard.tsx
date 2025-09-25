@@ -4,7 +4,11 @@ import React from 'react';
 import Link from 'next/link';
 import { navData } from '../../data/navData';
 
-export default function RolesMiniCard() {
+interface RolesMiniCardProps {
+  closeDropdown: () => void;
+}
+
+export default function RolesMiniCard({ closeDropdown }: RolesMiniCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-6 w-[500px] max-w-[90vw]">
       <div className="flex gap-6">
@@ -18,6 +22,7 @@ export default function RolesMiniCard() {
               <Link
                 key={index}
                 href={feature.href}
+                onClick={closeDropdown}
                 className="flex items-center space-x-3 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md transition-all duration-200 group"
               >
                 <div className="w-6 h-6 bg-gray-100 rounded flex items-center justify-center group-hover:bg-blue-50 transition-colors duration-200">

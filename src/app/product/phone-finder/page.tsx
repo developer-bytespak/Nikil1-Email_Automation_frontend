@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 
 export default function PhoneFinderPage() {
   return (
@@ -8,7 +9,8 @@ export default function PhoneFinderPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div>
+            <ScrollAnimation animation="fadeInLeft" delay={100}>
+              <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Get real numbers, reach leads directly, & <span className="bg-blue-100 px-2 py-1 rounded">convert 3x faster</span>
               </h1>
@@ -25,10 +27,12 @@ export default function PhoneFinderPage() {
               <p className="text-sm text-gray-500">
                 Zero commitment. Free &quot;not found&quot; lookups. Keep unused credits.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
 
             {/* Right Content - Waterfall Enrichment Visual */}
-            <div className="flex justify-center">
+            <ScrollAnimation animation="fadeInRight" delay={200}>
+              <div className="flex justify-center">
               <div className="bg-gray-100 rounded-2xl p-8 shadow-lg max-w-md w-full">
                 {/* Initial Contact Card */}
                 <div className="bg-white rounded-xl p-4 mb-6 shadow-md">
@@ -118,7 +122,8 @@ export default function PhoneFinderPage() {
                   <div className="text-sm text-green-600 font-medium">(+1) 512-237-8194</div>
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -126,12 +131,8 @@ export default function PhoneFinderPage() {
       {/* Waterfall Enrichment Infographic */}
       <section className="py-20 lg:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
-                       transform hover:scale-105 hover:shadow-2xl 
-                       transition-all duration-500 animate-fade-in-up"
-            style={{ animationDelay: '0.2s' }}
-          >
+          <ScrollAnimation animation="scaleIn" delay={100}>
+            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 More phone numbers. <span className="text-blue-600">Same great quality.</span>
@@ -238,19 +239,16 @@ export default function PhoneFinderPage() {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* LinkedIn Extension Card */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
-                       transform hover:scale-105 hover:shadow-2xl 
-                       transition-all duration-500 animate-fade-in-up"
-            style={{ animationDelay: '0.4s' }}
-          >
+          <ScrollAnimation animation="scaleIn" delay={100}>
+            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Grab phone numbers directly from LinkedIn
@@ -396,24 +394,28 @@ export default function PhoneFinderPage() {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Our Phone Finder?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get access to the most comprehensive and accurate phone number database
-            </p>
-          </div>
+          <ScrollAnimation animation="fadeInUp" delay={100}>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Why Choose Our Phone Finder?
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Get access to the most comprehensive and accurate phone number database
+              </p>
+            </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -421,9 +423,11 @@ export default function PhoneFinderPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Verified Numbers</h3>
               <p className="text-gray-600">All phone numbers are verified and updated daily to ensure maximum reachability</p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -431,9 +435,11 @@ export default function PhoneFinderPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Waterfall Enrichment</h3>
               <p className="text-gray-600">Try multiple providers automatically until we find the right number for your lead</p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -441,7 +447,8 @@ export default function PhoneFinderPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Direct Reach</h3>
               <p className="text-gray-600">Call your leads directly and convert 3x faster with verified phone numbers</p>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>

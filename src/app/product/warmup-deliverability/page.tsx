@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
+
 export default function WarmupDeliverabilityPage() {
   return (
     <div className="min-h-screen bg-white">
       <section className="pt-8 w-full flex items-center justify-center bg-gradient-to-b from-blue-50 to-indigo-100 py-16 lg:py-24">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <ScrollAnimation animation="fadeInUp" delay={200}>
     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-700 mb-6">
       Forget about the  
        <span className="text-blue-600"> spam folder!  </span>
@@ -28,18 +31,24 @@ export default function WarmupDeliverabilityPage() {
         14 days free. No card required. Available in all plans.
       </p>
     </div>
+    </ScrollAnimation>
   </div>
 </section>
 
       {/* Problem Statement Section */}
       <section className="py-16 lg:py-24 bg-blue-600">
+        <ScrollAnimation animation="fadeInUp" delay={200}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
             Less than a 50% open rate?<br />
             Your emails <span className="bg-gradient-to-r from-yellow-300 to-green-400 text-black px-2 py-1 rounded">go to spam</span><br />
             without you knowing.
           </h2>
+        
         </div>
+        </ScrollAnimation>
+
+        
       </section>
 
       {/* Comparison Table Section */}

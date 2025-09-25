@@ -3,31 +3,36 @@
 import Link from 'next/link';
 import { navData } from '../../data/navData';
 
-export default function ToolboxMegaCard() {
+interface ToolboxMegaCardProps {
+  closeDropdown: () => void;
+}
+
+export default function ToolboxMegaCard({ closeDropdown }: ToolboxMegaCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-8 w-[900px] max-w-[90vw]">
-      <div className="flex gap-8">
-        {/* Main Content - 2 Columns */}
-        <div className="flex-1 grid grid-cols-2 gap-8">
+    <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-4 md:p-8 w-full max-w-[95vw] md:w-[900px] md:max-w-[90vw] min-h-fit">
+      <div className="flex flex-col lg:flex-row gap-4 md:gap-8">
+        {/* Main Content - Responsive Grid */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {navData.toolbox.columns.map((column, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide">
+            <div key={index} className="space-y-3 md:space-y-4">
+              <h3 className="text-xs md:text-sm font-bold text-gray-900 uppercase tracking-wide">
                 {column.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
                 {column.subtext}
               </p>
-              <div className="space-y-3">
+              <div className="space-y-2 md:space-y-3">
                 {column.features.map((feature, featureIndex) => (
                   <Link
                     key={featureIndex}
                     href={feature.href}
-                    className="flex items-center space-x-3 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md transition-all duration-200 group"
+                    onClick={closeDropdown}
+                    className="flex items-center space-x-2 md:space-x-3 text-xs md:text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-2 md:px-3 py-2 rounded-md transition-all duration-200 group"
                   >
-                    <div className="w-6 h-6 bg-gray-100 rounded flex items-center justify-center group-hover:bg-blue-50 transition-colors duration-200">
+                    <div className="w-5 h-5 md:w-6 md:h-6 bg-gray-100 rounded flex items-center justify-center group-hover:bg-blue-50 transition-colors duration-200 flex-shrink-0">
                       {getToolboxIcon(feature.title)}
                     </div>
-                    <span>{feature.title}</span>
+                    <span className="truncate">{feature.title}</span>
                   </Link>
                 ))}
               </div>
@@ -35,26 +40,26 @@ export default function ToolboxMegaCard() {
           ))}
         </div>
 
-        {/* Integration Card */}
-        <div className="w-[320px] h-[240px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 flex flex-col justify-between shadow-lg">
-          <div className="text-center">
-            <h3 className="text-white font-semibold text-sm mb-4 leading-tight">
+        {/* Integration Card - Responsive */}
+        <div className="w-full lg:w-[320px] h-auto lg:h-[240px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-4 md:p-6 flex flex-col justify-between shadow-lg">
+          <div className="text-center mb-4 lg:mb-0">
+            <h3 className="text-white font-semibold text-xs md:text-sm mb-4 leading-tight">
               Integrate your stack to <span className="text-blue-400 font-bold">MarketingPro</span> & run entire pipeline in 1 spot
             </h3>
             <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-lg">M</span>
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm md:text-lg">M</span>
               </div>
             </div>
             <div className="grid grid-cols-4 gap-2 mb-4">
               {getIntegrationLogos().slice(0, 8).map((logo, index) => (
-                <div key={index} className="w-6 h-6 bg-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm">
+                <div key={index} className="w-5 h-5 md:w-6 md:h-6 bg-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm">
                   {logo}
                 </div>
               ))}
             </div>
           </div>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-md">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors duration-200 shadow-md">
             Check MarketingPro integrations
           </button>
         </div>

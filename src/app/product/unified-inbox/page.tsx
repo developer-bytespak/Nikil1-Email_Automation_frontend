@@ -1,78 +1,94 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
+
 export default function UnifiedInboxPage() {
   return (
     <div className="min-h-screen bg-white">
       <section className="pt-20 w-full flex items-center justify-center bg-gradient-to-b from-blue-50 to-indigo-100 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-700 mb-6">
-            Centralize multichannel conversations in the <span className="text-blue-600">Unified Inbox</span><br />
-            
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
-            Bring together calls, emails, and LinkedIn messages—so every lead interaction is right where you need it.          </p>
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-700 mb-6">
+              Centralize multichannel conversations in the <span className="text-blue-600">Unified Inbox</span><br />
+              
+            </h1>
+          </ScrollAnimation>
+          <ScrollAnimation animation="fadeInUp" delay={400}>
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+              Bring together calls, emails, and LinkedIn messages—so every lead interaction is right where you need it.          </p>
+          </ScrollAnimation>
           
           {/* CTA Button */}
-          <div className="flex flex-col items-center space-y-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl transform hover:-translate-y-1 flex items-center space-x-3 group">
-              <span>Get leads&apos; interactions in 1 chat</span>
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center group-hover:bg-blue-400 transition-colors duration-300">
-                <svg className="w-4 h-4 text-white transform group-hover:translate-x-0.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </button>
-            
-            {/* Disclaimer */}
-            <p className="text-sm text-gray-500">
-              14 days free. No card required. Available in all plans.
-            </p>
-          </div>
+          <ScrollAnimation animation="fadeInUp" delay={600}>
+            <div className="flex flex-col items-center space-y-4">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl transform hover:-translate-y-1 flex items-center space-x-3 group">
+                <span>Get leads&apos; interactions in 1 chat</span>
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center group-hover:bg-blue-400 transition-colors duration-300">
+                  <svg className="w-4 h-4 text-white transform group-hover:translate-x-0.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </button>
+              
+              {/* Disclaimer */}
+              <p className="text-sm text-gray-500">
+                14 days free. No card required. Available in all plans.
+              </p>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Problem Statement Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-[28px] shadow-2xl p-6 sm:p-10 md:p-14 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
-            <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 leading-snug mb-10">
-              <span>Without a </span>
-              <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded-lg">clear overview</span>
-              <span> of all interactions with your lead, you…</span>
-            </h2>
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="bg-white rounded-[28px] shadow-2xl p-6 sm:p-10 md:p-14 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+              <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 leading-snug mb-10">
+                <span>Without a </span>
+                <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded-lg">clear overview</span>
+                <span> of all interactions with your lead, you…</span>
+              </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              {/* Card 1 */}
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center">
-                  <svg className="w-7 h-7 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5 12.083 12.083 0 015.84 10.578L12 14z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-600">can’t understand conversation status to define an informed next step</p>
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                {/* Card 1 */}
+                <ScrollAnimation animation="fadeInUp" delay={400}>
+                  <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center">
+                      <svg className="w-7 h-7 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5 12.083 12.083 0 015.84 10.578L12 14z" />
+                      </svg>
+                    </div>
+                    <p className="text-sm text-gray-600">can&apos;t understand conversation status to define an informed next step</p>
+                  </div>
+                </ScrollAnimation>
 
-              {/* Card 2 */}
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-pink-50 flex items-center justify-center">
-                  <svg className="w-7 h-7 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-600">aren’t aligned with your teammates’ actions, resulting in missed opportunities</p>
-              </div>
+                {/* Card 2 */}
+                <ScrollAnimation animation="fadeInUp" delay={600}>
+                  <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-pink-50 flex items-center justify-center">
+                      <svg className="w-7 h-7 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    <p className="text-sm text-gray-600">aren&apos;t aligned with your teammates&apos; actions, resulting in missed opportunities</p>
+                  </div>
+                </ScrollAnimation>
 
-              {/* Card 3 */}
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center">
-                  <svg className="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-600">can’t act quickly across channels or without switching multiple pricey tools</p>
+                {/* Card 3 */}
+                <ScrollAnimation animation="fadeInUp" delay={800}>
+                  <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    <div className="mx-auto mb-4 w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center">
+                      <svg className="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <p className="text-sm text-gray-600">can&apos;t act quickly across channels or without switching multiple pricey tools</p>
+                  </div>
+                </ScrollAnimation>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -80,18 +96,21 @@ export default function UnifiedInboxPage() {
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Headline */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Cut the clutter with{' '}
-              <span className="bg-yellow-400 text-blue-900 px-3 py-1 rounded-lg">
-                centralized inbox
-              </span>{' '}
-              & put efforts where they matter the most
-            </h2>
-          </div>
+          <ScrollAnimation animation="fadeInUp" delay={200}>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                Cut the clutter with{' '}
+                <span className="bg-yellow-400 text-blue-900 px-3 py-1 rounded-lg">
+                  centralized inbox
+                </span>{' '}
+                & put efforts where they matter the most
+              </h2>
+            </div>
+          </ScrollAnimation>
 
           {/* Main Content Card */}
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+          <ScrollAnimation animation="fadeInUp" delay={400}>
+            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Text Content */}
               <div className="space-y-6">
@@ -307,37 +326,42 @@ export default function UnifiedInboxPage() {
               </div>
             </div>
           </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Take Action Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Text Content */}
-              <div className="space-y-6">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-                  Take{' '}
-                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded-lg">
-                    immediate action
-                  </span>{' '}
-                  on any channel, in just 1 click
-                </h2>
-                
-                <div className="space-y-4">
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Engage with leads on multiple channels within a click, directly from their conversation thread.
-                  </p>
-                  
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Seamlessly switch between email, LinkedIn, WhatsApp, and calls - without building complex flows or manually switching platforms.
-                  </p>
-                </div>
-              </div>
+          
+            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Left Column - Text Content */}
+                <ScrollAnimation animation="fadeInLeft" delay={400}>
+                  <div className="space-y-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                      Take{' '}
+                      <span className="bg-green-100 text-green-800 px-2 py-1 rounded-lg">
+                        immediate action
+                      </span>{' '}
+                      on any channel, in just 1 click
+                    </h2>
+                    
+                    <div className="space-y-4">
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Engage with leads on multiple channels within a click, directly from their conversation thread.
+                      </p>
+                      
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Seamlessly switch between email, LinkedIn, WhatsApp, and calls - without building complex flows or manually switching platforms.
+                      </p>
+                    </div>
+                  </div>
+                </ScrollAnimation>
 
-              {/* Right Column - Interface Mockup */}
-              <div className="relative">
+                {/* Right Column - Interface Mockup */}
+                
+                  <div className="relative">
                 <div className="bg-gray-50 rounded-2xl p-6 shadow-inner">
                 {/* Email Status Card */}
                 <div className="bg-blue-50 rounded-lg p-3 mb-4 flex items-center space-x-2">
@@ -441,10 +465,12 @@ export default function UnifiedInboxPage() {
                     <span className="text-sm font-medium">Send now</span>
                   </button>
                 </div>
+                </div>
+                
               </div>
             </div>
           </div>
-          </div>
+          
         </div>
       </section>
 

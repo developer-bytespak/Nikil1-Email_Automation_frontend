@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 
 export default function FounderPage() {
   return (
@@ -10,11 +11,17 @@ export default function FounderPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Side - Text Content */}
               <div className="animate-fade-in-up">
+              <ScrollAnimation animation="fadeInUp" delay={200}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                   For <span className="text-blue-600 animate-pulse" >Solo founder?</span> We’ve got your back. <span className="text-blue-600 animate-pulse">generate revenue on</span> their own
                 </h1>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInUp" delay={400}>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-                Find the right prospects, personalize like a pro, and manage conversations across every channel — email, LinkedIn, WhatsApp, and phone — without ever leaving one platform.                </p>
+                Find the right prospects, personalize like a pro, and manage conversations across every channel — email, LinkedIn, WhatsApp, and phone — without ever leaving one platform.               
+                 </p>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInUp" delay={600}>
                 <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
                   <Link href="#">
                     <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-blue-700">
@@ -30,6 +37,7 @@ export default function FounderPage() {
                     </button>
                   </Link>
                 </div>
+                </ScrollAnimation>
               </div>
 
               {/* Right Side - UI Mockup */}
@@ -206,20 +214,26 @@ export default function FounderPage() {
       </section>
 
       {/* Founder Tools Section */}
+
       <section className="py-20 lg:py-32 bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="fadeInDown" delay={100}>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center 
                  leading-tight tracking-tight drop-shadow-lg">
                 Everything you need to <br /> scale your solo business
             </h2>
           </div>
+          </ScrollAnimation>
+
 
           <div className="space-y-8">
             {/* Card 1 - Lead Generation */}
+            <ScrollAnimation animation="fadeInUp" delay={200}>
             <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '0.4s'}}>
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
                   Create your perfect lead list with verified contacts
                   </h3>
@@ -228,6 +242,8 @@ export default function FounderPage() {
 
                   No network? No worries. Define your ideal customer profile (ICP) and instantly access our database of 450M+ B2B professionals worldwide.                  </p>
                 </div>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInRight" delay={300}>
                 <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
                   <img 
                     src="/images/founder4.png.png" 
@@ -235,13 +251,17 @@ export default function FounderPage() {
                     className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
                   />
                 </div>
+                </ScrollAnimation>
               </div>
             </div>
+              </ScrollAnimation>
 
             {/* Card 2 - Multichannel Outreach */}
+            <ScrollAnimation animation="fadeInUp" delay={200}>
             <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '0.8s'}}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '1s'}}>
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
                   Launch multichannel outreach in minutes
                   </h3>
@@ -249,6 +269,8 @@ export default function FounderPage() {
                   Connect with prospects across email, LinkedIn, WhatsApp, and phone  all within a single campaign. Automate smart follow-ups that keep you top-of-mind while still feeling personal and human.
                   </p>
                 </div>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInRight" delay={300}>
                 <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
                   <img 
                     src="/images/founder3.png.png" 
@@ -256,13 +278,17 @@ export default function FounderPage() {
                     className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
                   />
                 </div>
+                </ScrollAnimation>
               </div>
             </div>
+            </ScrollAnimation>
 
             {/* Card 3 - AI Personalization */}
+            <ScrollAnimation animation="fadeInUp" delay={200}>
             <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '1.4s'}}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '1.6s'}}>
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
                   Personalize outreach without the heavy lifting
 
@@ -270,6 +296,8 @@ export default function FounderPage() {
                   <p className="text-lg text-gray-600 leading-relaxed">
                   Our AI helps you create messages that sound authentic and true to your voice. Add tailored intros, company insights, or even custom LinkedIn voice notes at scale — all in just a few clicks.                  </p>
                 </div>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInRight" delay={300}>
                 <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
                   <img 
                     src="/images/founder2.png.png" 
@@ -277,18 +305,25 @@ export default function FounderPage() {
                     className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
                   />
                 </div>
+                </ScrollAnimation>
               </div>
             </div>
+            </ScrollAnimation>
 
             {/* Card 4 - Revenue Analytics */}
+            <ScrollAnimation animation="fadeInUp" delay={200}>
             <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '2s'}}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '2.2s'}}>
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
+                <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
                   Make sure your emails always land in the inbox
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                  Email deliverability is one of the biggest challenges in outbound sales. If your messages end up in spam, you lose opportunities before they even start. That’s why our deliverability tool automatically works behind the scenes to protect and strengthen your sender reputation.                </p></div>
+                  Email deliverability is one of the biggest challenges in outbound sales. If your messages end up in spam, you lose opportunities before they even start. That’s why our deliverability tool automatically works behind the scenes to protect and strengthen your sender reputation.                </p>
+                  </div>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInRight" delay={300}>
                 <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
                   <img 
                     src="/images/founder1.png.png" 
@@ -296,8 +331,10 @@ export default function FounderPage() {
                     className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
                   />
                 </div>
+                </ScrollAnimation>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -305,23 +342,32 @@ export default function FounderPage() {
       {/* Steal What Works Section */}
       <section className="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ScrollAnimation animation="fadeInDown" delay={200}>
           <div className="text-center mb-16">
+          <ScrollAnimation animation="fadeInUp" delay={400}>
             <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
               Resources
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={600}>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Everything you need to succeed as a solo founder
             </h2>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={800}>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Proven templates, strategies, and tools from successful solo entrepreneurs.
             </p>
+            </ScrollAnimation>
           </div>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 - Cold Email Templates */}
+            <ScrollAnimation animation="fadeInUp" delay={200}>
             <div 
               className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
                          transform hover:scale-105 hover:shadow-2xl 
@@ -348,8 +394,10 @@ export default function FounderPage() {
                 </button>
               </div>
             </div>
+            </ScrollAnimation>
 
             {/* Card 2 - Founder Playbooks */}
+            <ScrollAnimation animation="fadeInUp" delay={400}>
             <div 
               className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
                          transform hover:scale-105 hover:shadow-2xl 
@@ -376,8 +424,10 @@ export default function FounderPage() {
                 </button>
               </div>
             </div>
+            </ScrollAnimation>
 
             {/* Card 3 - AI Prompts */}
+            <ScrollAnimation animation="fadeInUp" delay={600}>
             <div 
               className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
                          transform hover:scale-105 hover:shadow-2xl 
@@ -404,8 +454,10 @@ export default function FounderPage() {
                 </button>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
         </div>
+        
       </section>
 
       {/* CTA Section */}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 
 export default function LeadDatabasePage() {
   return (
@@ -7,24 +8,30 @@ export default function LeadDatabasePage() {
       <section className="pt-20 lg:pt-24 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Find new buyers & their <span className="text-blue-600">verified info</span> in 450M+ contacts database
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-4xl mx-auto">
-              Search across 63M+ companies, find decision-makers fast, and reach out in seconds.
-            </p>
-            <div className="flex justify-center">
-              <Link href="/signup">
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3">
-                  Get verified prospects
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </button>
-              </Link>
-            </div>
+            <ScrollAnimation animation="fadeInUp" delay={100}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Find new buyers & their <span className="text-blue-600">verified info</span> in 450M+ contacts database
+              </h1>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-4xl mx-auto">
+                Search across 63M+ companies, find decision-makers fast, and reach out in seconds.
+              </p>
+            </ScrollAnimation>
+            <ScrollAnimation animation="bounceIn" delay={300}>
+              <div className="flex justify-center">
+                <Link href="/signup">
+                  <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3">
+                    Get verified prospects
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </button>
+                </Link>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -33,27 +40,33 @@ export default function LeadDatabasePage() {
       <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              Interactive Demo
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              See How It <span className="text-blue-600">Works</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Experience our intuitive database interface with powerful filtering capabilities. 
-              <span className="text-blue-600 font-semibold"> Click around</span> to explore the features that make lead generation effortless.
-            </p>
+            <ScrollAnimation animation="fadeInUp" delay={100}>
+              <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Interactive Demo
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                See How It <span className="text-blue-600">Works</span>
+              </h2>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Experience our intuitive database interface with powerful filtering capabilities. 
+                <span className="text-blue-600 font-semibold"> Click around</span> to explore the features that make lead generation effortless.
+              </p>
+            </ScrollAnimation>
           </div>
           
-          <div 
-            className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 max-w-7xl mx-auto relative overflow-hidden
-                       transform hover:scale-105 hover:shadow-2xl 
-                       transition-all duration-500 animate-fade-in-up"
-            style={{ animationDelay: '0.2s' }}
-          >
+          <ScrollAnimation animation="scaleIn" delay={400}>
+            <div 
+              className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 max-w-7xl mx-auto relative overflow-hidden
+                         transform hover:scale-105 hover:shadow-2xl 
+                         transition-all duration-500"
+            >
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-green-100 to-blue-100 rounded-full translate-y-12 -translate-x-12 opacity-50"></div>
@@ -237,19 +250,22 @@ export default function LeadDatabasePage() {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Banner Section */}
       <section className="py-16 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Build lead lists, find verified contacts, &<br />
-            <span className="bg-gradient-to-r from-yellow-300 to-green-400 text-gray-900 px-3 py-1 rounded-lg inline-block mt-2">
-              connect with your ICP
-            </span> in a few clicks
-          </h2>
+          <ScrollAnimation animation="fadeInUp" delay={100}>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Build lead lists, find verified contacts, &<br />
+              <span className="bg-gradient-to-r from-yellow-300 to-green-400 text-gray-900 px-3 py-1 rounded-lg inline-block mt-2">
+                connect with your ICP
+              </span> in a few clicks
+            </h2>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -258,12 +274,12 @@ export default function LeadDatabasePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Step 1 */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.4s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={100}>
+              <div 
+                className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
+                           transform hover:scale-105 hover:shadow-2xl 
+                           transition-all duration-500"
+              >
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
@@ -273,15 +289,16 @@ export default function LeadDatabasePage() {
               <p className="text-gray-600 text-center leading-relaxed">
               Access a 63M+ database of high-value accounts and filter your ideal match by tech stack, funding, revenue, etc.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
 
             {/* Step 2 */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.6s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div 
+                className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
+                           transform hover:scale-105 hover:shadow-2xl 
+                           transition-all duration-500"
+              >
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-blue-600">2</span>
               </div>
@@ -290,15 +307,16 @@ export default function LeadDatabasePage() {
               </h3>
               <p className="text-gray-600 text-center leading-relaxed">
               Use advanced filters to find decision-makers at target companies, including their verified emails & numbers              </p>
-            </div>
+              </div>
+            </ScrollAnimation>
 
             {/* Step 3 */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.8s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <div 
+                className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
+                           transform hover:scale-105 hover:shadow-2xl 
+                           transition-all duration-500"
+              >
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-blue-600">3</span>
               </div>
@@ -307,7 +325,8 @@ export default function LeadDatabasePage() {
               </h3>
               <p className="text-gray-600 text-center leading-relaxed">
               Send your new leads to multichannel sequences that run on autopilot, without sacrificing personalization</p>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -315,15 +334,16 @@ export default function LeadDatabasePage() {
       {/* Multichannel Campaigns Section */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
-                       transform hover:scale-105 hover:shadow-2xl 
-                       transition-all duration-500 animate-fade-in-up"
-            style={{ animationDelay: '1.0s' }}
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Content */}
-              <div>
+          <ScrollAnimation animation="fadeInUp" delay={100}>
+            <div 
+              className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
+                         transform hover:scale-105 hover:shadow-2xl 
+                         transition-all duration-500"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Left Content */}
+                <ScrollAnimation animation="fadeInLeft" delay={200}>
+                  <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                   Send<br />
                   multichannel<br />
@@ -336,10 +356,12 @@ export default function LeadDatabasePage() {
                   that works on autopilot<br />
                   in 1 click.
                 </p>
-              </div>
+                  </div>
+                </ScrollAnimation>
 
-              {/* Right Content - Multichannel Campaigns Visual */}
-              <div className="flex justify-center">
+                {/* Right Content - Multichannel Campaigns Visual */}
+                <ScrollAnimation animation="fadeInRight" delay={300}>
+                  <div className="flex justify-center">
                 <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg max-w-sm w-full">
                   {/* Three-step process cards */}
                   <div className="space-y-4">
@@ -375,24 +397,27 @@ export default function LeadDatabasePage() {
                     </div>
                   </div>
                 </div>
+                  </div>
+                </ScrollAnimation>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Lead Enrichment Section */}
       <section className="py-20 lg:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
-                       transform hover:scale-105 hover:shadow-2xl 
-                       transition-all duration-500 animate-fade-in-up"
-            style={{ animationDelay: '1.2s' }}
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Content */}
-              <div>
+          <ScrollAnimation animation="fadeInUp" delay={100}>
+            <div 
+              className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
+                         transform hover:scale-105 hover:shadow-2xl 
+                         transition-all duration-500"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Left Content */}
+                <ScrollAnimation animation="fadeInLeft" delay={200}>
+                  <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                   Scrape <span className="bg-blue-100 px-2 py-1 rounded">verified emails</span> & <span className="bg-blue-100 px-2 py-1 rounded">phone numbers</span> in 1-click
                 </h2>
@@ -404,10 +429,12 @@ export default function LeadDatabasePage() {
                     It takes 1 click to enrich your leads&apos; with verified information from the market&apos;s top providers.
                   </p>
                 </div>
-              </div>
+                  </div>
+                </ScrollAnimation>
 
-              {/* Right Content - Lead List Card */}
-              <div className="bg-gray-50 rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+                {/* Right Content - Lead List Card */}
+                <ScrollAnimation animation="fadeInRight" delay={300}>
+                  <div className="bg-gray-50 rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
               {/* Card Header */}
               <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
                 <div className="flex items-center justify-between">
@@ -510,26 +537,31 @@ export default function LeadDatabasePage() {
                   </div>
                 </div>
               </div>
+                  </div>
+                </ScrollAnimation>
+              </div>
             </div>
-            </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Our Lead Database?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get access to the most comprehensive and accurate B2B contact database
-            </p>
-          </div>
+          <ScrollAnimation animation="fadeInUp" delay={100}>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Why Choose Our Lead Database?
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Get access to the most comprehensive and accurate B2B contact database
+              </p>
+            </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -537,9 +569,11 @@ export default function LeadDatabasePage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Verified Contacts</h3>
               <p className="text-gray-600">All contacts are verified and updated daily to ensure maximum deliverability</p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -547,9 +581,11 @@ export default function LeadDatabasePage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Advanced Filters</h3>
               <p className="text-gray-600">Filter by industry, company size, job title, location, and more to find your ideal prospects</p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -557,7 +593,8 @@ export default function LeadDatabasePage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Instant Access</h3>
               <p className="text-gray-600">Export contacts instantly and start your outreach campaigns within minutes</p>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>

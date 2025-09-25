@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import ScrollAnimation from '@/components/ScrollAnimation';
 export default function SalesDevelopmentPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -9,29 +9,36 @@ export default function SalesDevelopmentPage() {
           <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform hover:scale-[1.02] transition-all duration-500">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Side - Text Content */}
-              <div className="animate-fade-in-up">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-                  For Sales Reps who want to <span className="text-blue-600 animate-pulse">book more qualified meetings, faster.</span>
-                </h1>
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-                  The prospecting tool finds better leads, launch sequences across email, LinkedIn, WhatsApp, and phone, and personalize like you know them.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-                  <Link href="/signup">
-                    <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-blue-700">
-                      Start Free Trial
-                    </button>
-                  </Link>
-                  <Link href="/pricing">
-                    <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105">
-                      View Pricing
-                    </button>
-                  </Link>
-                </div>
+              <div>
+                <ScrollAnimation animation="fadeInUp" delay={200}>
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                    For Sales Reps who want to <span className="text-blue-600 animate-pulse">book more qualified meetings, faster.</span>
+                  </h1>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInUp" delay={400}>
+                  <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                    The prospecting tool finds better leads, launch sequences across email, LinkedIn, WhatsApp, and phone, and personalize like you know them.
+                  </p>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInUp" delay={600}>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link href="/signup">
+                      <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-blue-700">
+                        Start Free Trial
+                      </button>
+                    </Link>
+                    <Link href="/pricing">
+                      <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105">
+                        View Pricing
+                      </button>
+                    </Link>
+                  </div>
+                </ScrollAnimation>
               </div>
 
               {/* Right Side - UI Mockup */}
-              <div className="flex justify-center animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+              <ScrollAnimation animation="fadeInRight" delay={500}>
+                <div className="flex justify-center">
                 <div className="bg-white rounded-2xl shadow-xl p-6 max-w-md w-full border border-gray-200 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
                   {/* Chat Interface */}
                   <div className="mb-6">
@@ -182,7 +189,8 @@ export default function SalesDevelopmentPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+                </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>
@@ -191,6 +199,7 @@ export default function SalesDevelopmentPage() {
       {/* Prospecting Tools Section */}
       <section className="py-20 lg:py-32 bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="fadeInDown" delay={100}>
           <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center 
                leading-tight tracking-tight drop-shadow-lg">
@@ -198,78 +207,104 @@ export default function SalesDevelopmentPage() {
           </h2>
 
           </div>
+          </ScrollAnimation>
 
           <div className="space-y-8">
             {/* Card 1 */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '0.4s'}}>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
-                  Find qualified leads with verified contact info
-                  </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                  Supercharge your prospecting with our LinkedIn extension. Instantly get accurate emails and phone numbers, enriched by multiple top data providers — all without leaving LinkedIn Sales Navigator.                  </p>
-                </div>
-                <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
-                  <img 
-                    src="/images/sd1.png.png" 
-                    alt="LinkedIn Integration" 
-                    className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
-                  />
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <ScrollAnimation animation="fadeInLeft" delay={400}>
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
+                        Find qualified leads with verified contact info
+                      </h3>
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Supercharge your prospecting with our LinkedIn extension. Instantly get accurate emails and phone numbers, enriched by multiple top data providers — all without leaving LinkedIn Sales Navigator.
+                      </p>
+                    </div>
+                  </ScrollAnimation>
+                  <ScrollAnimation animation="fadeInRight" delay={300}>
+                    <div className="flex justify-center">
+                      <img 
+                        src="/images/sd1.png.png" 
+                        alt="LinkedIn Integration" 
+                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+                      />
+                    </div>
+                  </ScrollAnimation>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '1s'}}>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
-                  Follow-up, across email, LinkedIn, WhatsApp, and phone
-                  </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                  Automate multichannel sequences, task reminders, and trigger outreach based on engagement or intent — so you reach out when it counts.                  </p>
-                </div>
-                <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
-                  <img 
-                    src="/images/sd2.png.png" 
-                    alt="LinkedIn Integration" 
-                    className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
-                  />
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <ScrollAnimation animation="fadeInLeft" delay={300}>
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
+                        Follow-up, across email, LinkedIn, WhatsApp, and phone
+                      </h3>
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        Automate multichannel sequences, task reminders, and trigger outreach based on engagement or intent — so you reach out when it counts.
+                      </p>
+                    </div>
+                  </ScrollAnimation>
+                  <ScrollAnimation animation="fadeInRight" delay={400}>
+                    <div className="flex justify-center">
+                      <img 
+                        src="/images/sd2.png.png" 
+                        alt="LinkedIn Integration" 
+                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+                      />
+                    </div>
+                  </ScrollAnimation>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '1.4s'}}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '1.6s'}}>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
-                  peaks directly to the client’s desired outcome deep personalization without effort.
-                  </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                  explains the how AI, insights, seconds and emphasizes the impact personalized, 1:1 at scale.                  </p>
-                </div>
-                <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
-                  <img 
-                    src="/images/sd3.png.png" 
-                    alt="LinkedIn Integration" 
-                    className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
-                  />
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <ScrollAnimation animation="fadeInLeft" delay={300}>
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
+                        peaks directly to the client&apos;s desired outcome deep personalization without effort.
+                      </h3>
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        explains the how AI, insights, seconds and emphasizes the impact personalized, 1:1 at scale.
+                      </p>
+                    </div>
+                  </ScrollAnimation>
+                  <ScrollAnimation animation="fadeInRight" delay={300}>
+                    <div className="flex justify-center">
+                      <img 
+                        src="/images/sd3.png.png" 
+                        alt="LinkedIn Integration" 
+                        className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+                      />
+                    </div>
+                  </ScrollAnimation>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Card 4 */}
+            <ScrollAnimation animation="fadeInUp" delay={300}>
             <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up" style={{animationDelay: '2s'}}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="animate-fade-in-left" style={{animationDelay: '2.2s'}}>
+              <ScrollAnimation animation="fadeInLeft" delay={300}>
+                <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transform hover:scale-105 transition-all duration-300">
                   Clients see the main value instantly “Run from CRM”, which makes the feature clear and attractive.
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
                   Instead of listing features, it explains the experience step by step launch, personalize, sync making it easy to imagine using.no bullet list, more storytelling easier for a client to read.                  </p>
                 </div>
+                </ScrollAnimation>
+                <ScrollAnimation animation="fadeInRight" delay={200}>
                 <div className="flex justify-center animate-fade-in-right" style={{animationDelay: '0.6s'}}>
                   <img 
                     src="/images/sd4.png.png" 
@@ -277,8 +312,10 @@ export default function SalesDevelopmentPage() {
                     className="w-full h-auto rounded-lg transform hover:scale-110 transition-all duration-500 hover:shadow-2xl"
                   />
                 </div>
+                </ScrollAnimation>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -286,29 +323,37 @@ export default function SalesDevelopmentPage() {
       {/* Steal What Works Section */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-              Resources
+          <ScrollAnimation animation="fadeInDown" delay={200}>
+            <div className="text-center mb-16">
+              <ScrollAnimation animation="fadeInUp" delay={400}>
+                <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                  Resources
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInUp" delay={600}>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                  Steal what works.
+                </h2>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fadeInUp" delay={800}>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Real templates with real data from real people.
+                </p>
+              </ScrollAnimation>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Steal what works.
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real templates with real data from real people.
-            </p>
-          </div>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 - Best converting cold email templates */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.2s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div 
+                className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
+                           transform hover:scale-105 hover:shadow-2xl 
+                           transition-all duration-500"
+              >
               <div className="mb-6">
                 <img 
                   src="/images/sd5.png.png" 
@@ -319,21 +364,22 @@ export default function SalesDevelopmentPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Best converting cold email templates
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Access the best-converting cold email templates and multi-channel outreach campaigns from 400+ million emails.
-              </p>
-              <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
-                Get access now
-              </button>
-            </div>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Access the best-converting cold email templates and multi-channel outreach campaigns from 400+ million emails.
+                </p>
+                <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+                  Get access now
+                </button>
+              </div>
+            </ScrollAnimation>
 
             {/* Card 2 - AI prompts to personalize at scale */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.4s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <div 
+                className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
+                           transform hover:scale-105 hover:shadow-2xl 
+                           transition-all duration-500"
+              >
               <div className="mb-6">
                 <img 
                   src="/images/sd6.png.png" 
@@ -344,21 +390,22 @@ export default function SalesDevelopmentPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 AI prompts to personalize at scale
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Enhance leads&apos; data, segment target audience, and hyper-personalize outreach at scale.
-              </p>
-              <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
-                Get access now
-              </button>
-            </div>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Enhance leads&apos; data, segment target audience, and hyper-personalize outreach at scale.
+                </p>
+                <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+                  Get access now
+                </button>
+              </div>
+            </ScrollAnimation>
 
             {/* Card 3 - Playbooks of top-performing sales */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.6s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={600}>
+              <div 
+                className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
+                           transform hover:scale-105 hover:shadow-2xl 
+                           transition-all duration-500"
+              >
               <div className="mb-6">
                 <img 
                   src="/images/sd7.png.png" 
@@ -369,13 +416,15 @@ export default function SalesDevelopmentPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Playbooks of top-performing sales
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Follow proven tactics of top-performing sales teams to scale outbound and keep the pipeline moving.
-              </p>
-              <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
-                Get access now
-              </button>
-            </div>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Follow proven tactics of top-performing sales teams to scale outbound and keep the pipeline moving.
+                </p>
+                <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+                  Get access now
+                </button>
+              </div>
+            </ScrollAnimation>
+           
           </div>
         </div>
       </section>

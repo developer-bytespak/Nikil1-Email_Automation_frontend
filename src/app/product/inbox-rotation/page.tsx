@@ -1,13 +1,16 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 export default function InboxRotationPage() {
   return (
     <div className="min-h-screen bg-white">
       <section className="pt-8 w-full flex items-center justify-center bg-gradient-to-b from-blue-50 to-indigo-100 py-16 lg:py-24">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-700 mb-6">
+      
+       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+       <ScrollAnimation animation="fadeInUp" delay={200}>  
+       <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-700 mb-6">
       Send one campaign from <br />
       <span className="text-blue-600">multiple sending accounts</span>
-    </h1>
+     </h1>
     <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
       Engage with leads at scale by using several sending accounts and LinkedIn profiles—all managed in one place.
     </p>        
@@ -27,16 +30,22 @@ export default function InboxRotationPage() {
       <p className="text-sm text-gray-500">
         14 days free. No card required. Available in all plans.
       </p>
+      
     </div>
-  </div>
-</section>
+    </ScrollAnimation>
+     </div>
+      
+
+       </section>
 
       {/* Multiple Senders Comparison Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="scaleIn" delay={200}>
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
                   Increase your daily sending volume with <span className="text-blue-600">multiple senders</span> per campaign
@@ -44,10 +53,13 @@ export default function InboxRotationPage() {
                 <p className="text-lg text-gray-600 leading-relaxed">
                 Combine several accounts into one campaign and reach 2x, 3x, even 4x more leads—without increasing your spam risk.                </p>
               </div>
+              </ScrollAnimation>
 
               {/* Right Content - Flowcharts */}
+              <ScrollAnimation animation="fadeInRight" delay={600}>
               <div className="space-y-8">
                 {/* Inefficient Single Sender */}
+                <ScrollAnimation animation="fadeInUp" delay={800}>
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <div className="flex items-center mb-4">
                     <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">
@@ -105,8 +117,10 @@ export default function InboxRotationPage() {
                     </div>
                   </div>
                 </div>
+                </ScrollAnimation>
 
                 {/* Efficient Multiple Senders */}
+                <ScrollAnimation animation="fadeInUp" delay={1000}>
                 <div className="bg-green-50 border border-green-200 rounded-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <div className="flex items-center mb-4">
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
@@ -181,18 +195,23 @@ export default function InboxRotationPage() {
                     </div>
                   </div>
                 </div>
+                </ScrollAnimation>
               </div>
+              </ScrollAnimation>
             </div>
           </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Role-Playing Scenarios Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="scaleIn" delay={200}>
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
                   Create <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded">role-playing</span> scenarios for higher conversions
@@ -201,10 +220,13 @@ export default function InboxRotationPage() {
                   Send emails, LinkedIn invites, or messages from other teammates&apos; accounts, increasing your chances of reply rates and booking meetings.
                 </p>
               </div>
+              </ScrollAnimation>
 
               {/* Right Content - Workflow Diagrams */}
+              <ScrollAnimation animation="fadeInRight" delay={600}>
               <div className="space-y-8">
                 {/* Inefficient Single Sender */}
+                <ScrollAnimation animation="fadeInUp" delay={800}>
                 <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <div className="absolute top-4 right-4">
                     <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
@@ -261,8 +283,10 @@ export default function InboxRotationPage() {
                     </div>
                   </div>
                 </div>
+                </ScrollAnimation>
 
                 {/* Efficient Multiple Senders */}
+                <ScrollAnimation animation="fadeInUp" delay={1000}>
                 <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <div className="absolute top-4 right-4">
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
@@ -323,18 +347,23 @@ export default function InboxRotationPage() {
                     </div>
                   </div>
                 </div>
+                </ScrollAnimation>
               </div>
+              </ScrollAnimation>
             </div>
           </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Advanced Conditions Section */}
       <section className="bg-blue-600 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="scaleIn" delay={200}>
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
+              <ScrollAnimation animation="fadeInLeft" delay={400}>
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
                   Send campaigns with advanced conditions from <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded">multiple senders</span>
@@ -343,10 +372,13 @@ export default function InboxRotationPage() {
                   Add multiple senders within a multi-channel campaign with advanced conditions to engage at scale, in a human way.
                 </p>
               </div>
+              </ScrollAnimation>
 
               {/* Right Content - Advanced Flowcharts */}
+              <ScrollAnimation animation="fadeInRight" delay={600}>
               <div className="space-y-8">
                 {/* Simple Single Sender */}
+                <ScrollAnimation animation="fadeInUp" delay={800}>
                 <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <div className="absolute top-4 right-4">
                     <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
@@ -412,8 +444,10 @@ export default function InboxRotationPage() {
                     </div>
                   </div>
                 </div>
+                </ScrollAnimation>
 
                 {/* Advanced Multiple Senders with Conditions */}
+                <ScrollAnimation animation="fadeInUp" delay={1000}>
                 <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <div className="absolute top-4 right-4">
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
@@ -542,9 +576,12 @@ export default function InboxRotationPage() {
                     </div>
                   </div>
                 </div>
+                </ScrollAnimation>
               </div>
+              </ScrollAnimation>
             </div>
           </div>
+          </ScrollAnimation>
         </div>
       </section>
       <footer className="bg-gray-900 text-white py-16">

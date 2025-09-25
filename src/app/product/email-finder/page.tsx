@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollAnimation from '@/components/ScrollAnimation';
 
 export default function EmailFinderPage() {
   return (
@@ -7,24 +8,30 @@ export default function EmailFinderPage() {
       <section className="pt-20 lg:pt-24 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Get all your <span className="text-blue-600">verified emails</span> in one place
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-4xl mx-auto">
-              Instead of paying for multiple data providers, we give you verified emails from 8 premium sources — all inside a single platform.
-            </p>
-            <div className="flex justify-center">
-              <Link href="/signup">
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3">
-                  Start finding emails
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </button>
-              </Link>
-            </div>
+            <ScrollAnimation animation="fadeInUp" delay={100}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Get all your <span className="text-blue-600">verified emails</span> in one place
+              </h1>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-4xl mx-auto">
+                Instead of paying for multiple data providers, we give you verified emails from 8 premium sources — all inside a single platform.
+              </p>
+            </ScrollAnimation>
+            <ScrollAnimation animation="bounceIn" delay={300}>
+              <div className="flex justify-center">
+                <Link href="/signup">
+                  <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3">
+                    Start finding emails
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </button>
+                </Link>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -34,12 +41,8 @@ export default function EmailFinderPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Card 1: Reach 80% of leads */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.2s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={100}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 Reach 80% of your leads with valid emails
               </h3>
@@ -56,15 +59,12 @@ export default function EmailFinderPage() {
                   80%
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
 
             {/* Card 2: Export from LinkedIn */}
-            <div 
-              className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 
-                         transform hover:scale-105 hover:shadow-2xl 
-                         transition-all duration-500 animate-fade-in-up"
-              style={{ animationDelay: '0.4s' }}
-            >
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 Export unlimited emails from LinkedIn
               </h3>
@@ -88,7 +88,8 @@ export default function EmailFinderPage() {
                   </svg>
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -96,12 +97,8 @@ export default function EmailFinderPage() {
       {/* No Waste Section */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12
-                       transform hover:scale-105 hover:shadow-2xl 
-                       transition-all duration-500 animate-fade-in-up"
-            style={{ animationDelay: '0.6s' }}
-          >
+          <ScrollAnimation animation="scaleIn" delay={100}>
+            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 transform hover:scale-105 hover:shadow-2xl transition-all duration-500">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Stop wasting money on unusable emails
@@ -265,24 +262,28 @@ export default function EmailFinderPage() {
                 </Link>
               </div>
             </div>
-          </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Our Email Finder?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get access to the most comprehensive and accurate email database from premium sources
-            </p>
-          </div>
+          <ScrollAnimation animation="fadeInUp" delay={100}>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Why Choose Our Email Finder?
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Get access to the most comprehensive and accurate email database from premium sources
+              </p>
+            </div>
+          </ScrollAnimation>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -290,9 +291,11 @@ export default function EmailFinderPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Verified Emails</h3>
               <p className="text-gray-600">All emails are verified and updated daily to ensure maximum deliverability</p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={300}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -300,9 +303,11 @@ export default function EmailFinderPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">8 Premium Sources</h3>
               <p className="text-gray-600">Access verified emails from 8 top data providers in one unified platform</p>
-            </div>
+              </div>
+            </ScrollAnimation>
             
-            <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <div className="text-center p-6 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -310,7 +315,8 @@ export default function EmailFinderPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Instant Results</h3>
               <p className="text-gray-600">Find and export verified emails instantly to start your outreach campaigns</p>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
